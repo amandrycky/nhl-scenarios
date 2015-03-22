@@ -1,0 +1,122 @@
+{
+	"ANA": 
+	{
+		"NAME": "Anaheim"
+	},
+	"ARI": 
+	{
+		"NAME": "Arizona"
+	},
+	"BOS":
+	{
+		"NAME": "Boston"
+	},
+	"BUF": 
+	{
+		"NAME": "Buffalo"
+	},
+	"CAR": 
+	{
+		"NAME": "Carolina"
+	},
+	"CGY": 
+	{
+		"NAME": "Calgary"
+	},
+	"CHI": 
+	{
+		"NAME": "Chicago"
+	},
+	"CBJ": 
+	{
+		"NAME": "Columbus"
+	},
+	"COL": 
+	{
+		"NAME": "Colorado"
+	},
+	"DAL": 
+	{
+		"NAME": "Dallas"
+	},
+	"DET": 
+	{
+		"NAME": "Detroit"
+	},
+	"EDM": 
+	{
+		"NAME": "Edmonton"
+	},
+	"FLA": 
+	{
+		"NAME": "Florida"
+	},
+	"L.A": 
+	{
+		"NAME": "Los Angeles"
+	},
+	"MIN": 
+	{
+		"NAME": "Minnesota"
+	},
+	"MTL": 
+	{
+		"NAME": "Montreal"
+	},
+	"N.J": 
+	{
+		"NAME": "New Jersey"
+	},
+	"NSH": 
+	{
+		"NAME": "Nashville"
+	},
+	"NYI": 
+	{
+		"NAME": "NY Islanders"
+	},
+	"NYR": 
+	{
+		"NAME": "NY Rangers"
+	},
+	"OTT": 
+	{
+		"NAME": "Ottawa"
+	},
+	"PHI": 
+	{
+		"NAME": "Philadelphia"
+	},
+	"PIT": 
+	{
+		"NAME": "Pittsburgh"
+	},
+	"S.J": 
+	{
+		"NAME": "San Jose"
+	},
+	"STL": 
+	{
+		"NAME": "St. Louis"
+	},
+	"T.B": 
+	{
+		"NAME": "Tampa"
+	},
+	"TOR": 
+	{
+		"NAME": "Toronto"
+	},
+	"VAN": 
+	{
+		"NAME": "Vancouver"
+	},
+	"WPG": 
+	{
+		"NAME": "Winnipeg"
+	},
+	"WSH": 
+	{
+		"NAME": "Washington"
+	}
+}
