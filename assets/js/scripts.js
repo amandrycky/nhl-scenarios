@@ -1052,12 +1052,12 @@ var conferences = {"E": "Eastern", "W": "Western"};
 
 $(document).ready(function(){
 	//DISPLAY TEAMS
-	var teamAllTemplate = "<tr><td><input type='checkbox' id='{{Abbrv}}-View' class='standings-view'></td><td><img height='30' width='30' src='assets/img/{{Abbrv}}.png'></img></td><td>{{Name}}</td>" 
+	var teamAllTemplate = "<tr><td><input type='checkbox' id='{{Abbrv}}-View' class='standings-view'></td><td><img height='20' width='20' src='assets/img/{{Abbrv}}.png'></img></td><td>{{Name}}</td>" 
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
 						+"<td>{{Points}}</td>"+
 						"<td>{{ROW}}</td>" +
 						+"</tr>";
-	var teamSelectedTemplate = "<tr id='{{Abbrv}}-SelRow' class='selected-row'></td><td><img height='30' width='30' src='assets/img/{{Abbrv}}.png'></img></td><td>{{Name}}</td>" 
+	var teamSelectedTemplate = "<tr id='{{Abbrv}}-SelRow' class='selected-row'></td><td><img height='20' width='20' src='assets/img/{{Abbrv}}.png'></img></td><td>{{Name}}</td>" 
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
 						+ "<td id='{{Abbrv}}-Sim'>{{Points}}</td>"
 						+ "<td id='{{Abbrv}}-ROW'>{{ROW}}</td>"
