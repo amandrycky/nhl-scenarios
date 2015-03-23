@@ -274,8 +274,8 @@ var teams =
 	{
 		"NAME": "Vancouver",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 11,
+		"CURRENT": 88,
+		"GAMES_LEFT": 10,
 		"ROW": 37,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -304,12 +304,6 @@ var teams =
 
 var gamesLeft = 
 {
-	"0":{
-		"HOME": "ARI",
-		"AWAY": "VAN",
-		"NHL_ID" : "2014021082",
-		"DATE": 1426982400000
-	},
 	"9":{
 		"HOME": "BUF",
 		"AWAY": "DAL",
