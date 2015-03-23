@@ -1103,8 +1103,16 @@ $(document).ready(function(){
 	// Add games and write via template
 	for (var game in gamesLeft){
 		var gameDate = new Date(parseInt(gamesLeft[game]["DATE"]));
+		gameDate.setDate(gameDate.getDate() + 1); //add 1 to date
 		var dateStr = gameDate.getFullYear();
-		var gameData = {"Date": gameDate.getMonth() + "/" + gameDate.getDate() + "/" + gameDate.getFullYear(), 
+		var dd = gameDate.getDate();
+		var mm = gameDate.getMonth() + 1;
+		var y = gameDate.getFullYear();
+
+		var formattedDate = mm + '/'+ dd + '/'+ y;
+		var gameData = {
+					"Date": formattedDate, 
+					// "Date": gameDate,
 					"Away": gamesLeft[game]["AWAY"],
 					"Home": gamesLeft[game]["HOME"],
 					"GameID": game
@@ -1255,6 +1263,6 @@ $(document).ready(function(){
 
 	}
 	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
-	$("#gamesTable").DataTable({paging: false, bInfo: false});
+	$("#gamesTable").DataTable({"order": [[0, "asc"]], paging: false, bInfo: false, columnDefs: [{"targets": 0, "type": "date-moment" }]});
 
 })
