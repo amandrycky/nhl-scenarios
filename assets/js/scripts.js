@@ -258,7 +258,7 @@ var teams =
 		"GAMES_LEFT": 9,
 		"ROW": 35,
 		"CONFERENCE": "E",
-		"DIVISION": "M"	
+		"DIVISION": "A"	
 	},
 	"TOR": 
 	{
