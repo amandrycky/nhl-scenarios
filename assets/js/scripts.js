@@ -104,7 +104,7 @@ var teams =
 	{
 		"NAME": "Detroit",
 		"SELECT": 1,
-		"CURRENT": 70,
+		"CURRENT": 89,
 		"GAMES_LEFT": 11,
 		"ROW": 36,
 		"CONFERENCE": "E",
@@ -194,9 +194,9 @@ var teams =
 	{
 		"NAME": "NY Rangers",
 		"SELECT": 1,
-		"CURRENT": 97,
-		"GAMES_LEFT": 12,
-		"ROW": 41,
+		"CURRENT": 99,
+		"GAMES_LEFT": 11,
+		"ROW": 42,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -480,11 +480,6 @@ var gamesLeft =
 		"AWAY": "MTL",
 		"DATE": 1428710400000
 	},	
-	"34":{
-		"HOME": "ANA",
-		"AWAY": "NYR",
-		"DATE": 1426982400000
-	},
 	"35":{
 		"HOME": "LAK",
 		"AWAY": "NJD",
