@@ -5,7 +5,7 @@ var teams =
 		"NAME": "Anaheim",
 		"SELECT": 1,
 		"CURRENT": 99,
-		"GAMES_LEFT": 9,
+		"GAMES_LEFT": 8,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -15,7 +15,7 @@ var teams =
 		"NAME": "Arizona",
 		"SELECT": 1,
 		"CURRENT": 50,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 16,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -409,7 +409,7 @@ var gamesLeft =
 		"AWAY": "CGY",
 		"DATE": 1428105600000
 	},
-	"29":{
+	"148":{
 		"HOME": "BOS",
 		"AWAY": "TOR",
 		"DATE": 1428105600000// 4/4
@@ -1033,11 +1033,24 @@ var gamesLeft =
 	"HOME": "CHI",
 	"AWAY": "COL",
 	"DATE": 1428710400000
+	},
+	"147":{
+		"HOME": "ARI",
+		"AWAY": "SJS",
+		"DATE": 1428105600000
 	}
 };
 
 var divisions = {"M": "Metropolitan", "A": "Atlantic", "P": "Pacific", "C": "Central"};
 var conferences = {"E": "Eastern", "W": "Western"};
+
+
+var preDefinedTeams = 
+{
+	"tankTeams": ["ARI", "BUF", "EDM"],
+	"easternPlayoff": ["FLA", "BOS", "OTT"],
+	"westernPlayoff": ["VAN", "LAK", "CGY", "WPG"]
+};
 
 $(document).ready(function(){
 	//DISPLAY TEAMS
@@ -1050,16 +1063,18 @@ $(document).ready(function(){
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
 						+ "<td id='{{Abbrv}}-Sim'>{{Points}}</td>"
 						+ "<td id='{{Abbrv}}-ROW'>{{ROW}}</td>"
+						+ "<td id='{{Abbrv}}-GL'>{{GamesLeft}}</td>"
 						+ "<td id='{{Abbrv}}-Status'><strong>W</strong>: 0 | <strong>OTL</strong>: 0 | <strong>L</strong>: 0</td>"
 						+"</tr>";
 	for (var team in teams) {
+		teams[team]["CALC_GAMES_LEFT"] = teams[team]["GAMES_LEFT"];
 		var teamData = {"Abbrv": team, 
 		  	"Name": teams[team]["NAME"], 
 		  	"Points": teams[team]["CURRENT"], 
 		  	"GamesLeft": teams[team]["CALC_GAMES_LEFT"], 
 		  	"ROW": teams[team]["ROW"],
 		  	"Conference": conferences[teams[team]["CONFERENCE"]],
-		  	"Division": divisions[teams[team]["DIVISION"]]};
+		  	"Division": divisions[teams[team]["DIVISION"]]}
 		var allHtml = Mustache.to_html(teamAllTemplate, teamData);
 		$(allHtml).appendTo("#tankTeams");
 		var selectedHTML = Mustache.to_html(teamSelectedTemplate, teamData);
@@ -1074,7 +1089,8 @@ $(document).ready(function(){
 		$(obj).hide();
 	});
 
-	
+	// start team table hidden
+	$("#teamTable").toggle();
 
 	function getSelectedTeams(){
 		var selectedTeams = []
@@ -1146,7 +1162,6 @@ $(document).ready(function(){
 	  return getSelectedTeams().indexOf(team) > -1;
 	}
 
-
 	$(".game-result").change(function(){
 		var gameID = this.id.split("-")[0];
 		gamesLeft[gameID]["WIN"] = this.id.split("-")[1];
@@ -1161,6 +1176,31 @@ $(document).ready(function(){
 		var otType = this.id.split("-")[2];
 		gamesLeft[gameID]["OT"] = otType;	
 		updatePoints();
+	});
+
+	$("#prePopulateTeams").change(function(){
+		// first, unselect currently selected
+		for (var team in teams){
+			teams[team]["SELECT"] = 0;
+			$("#" + team + "-View").prop("checked", false);
+		}
+
+		// clear selected teams grid
+		$(".selected-row").each(function(i, obj){
+			$(obj).hide();
+		});
+
+		var teamType = $("#prePopulateTeams").val();
+		if (teamType !== ""){
+			for(var i=0; i < preDefinedTeams[teamType].length; i++){
+				teams[preDefinedTeams[teamType][i]]["SELECT"] = 1;
+				$("#" + preDefinedTeams[teamType][i] + "-View").prop("checked", true);
+				updateSelectedGrid(preDefinedTeams[teamType][i]);
+
+			}
+			updateGameGrid();
+		}
+
 	});
 
 	// When select team, update grid of games and SELECT state of team.
@@ -1231,6 +1271,7 @@ $(document).ready(function(){
 			if (winningTeam !== undefined && winningTeam != ""){
 				// if we are calculating points for the winner, then add
 				if (teams[winningTeam]["SELECT"] === 1){
+					teams[winningTeam]["CALC_GAMES_LEFT"] = teams[winningTeam]["CALC_GAMES_LEFT"] - 1;
 					// get the winning team, first. add 2 points.
 					teams[winningTeam]["CALC"] = teams[winningTeam]["CALC"] + 2;
 					teams[winningTeam]["W"] = teams[winningTeam]["W"] + 1;
@@ -1246,6 +1287,7 @@ $(document).ready(function(){
 				else{
 					var losingTeam = homeTeam;
 				}
+				teams[losingTeam]["CALC_GAMES_LEFT"] = teams[losingTeam]["CALC_GAMES_LEFT"] - 1;
 				// if game went to OT, give out loser point.
 				if (gamesLeft[game]["OT"] === "O" || gamesLeft[game]["OT"] === "S"){
 					// Give losing team a OTL point.
@@ -1270,6 +1312,7 @@ $(document).ready(function(){
 									" | <strong>OTL</strong>: " + teams[team]["OTL"] +
 									" | <strong>L</strong>: " + teams[team]["L"];
 				$("#" + team + "-Status").html(statusText)
+				$("#" + team + "-GL").text(teams[team]["CALC_GAMES_LEFT"]);
 			}
 			
 		}
@@ -1277,5 +1320,4 @@ $(document).ready(function(){
 	}
 	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
 	$("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
-
 })
