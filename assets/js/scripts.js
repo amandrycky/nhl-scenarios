@@ -1050,6 +1050,7 @@ $(document).ready(function(){
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
 						+ "<td id='{{Abbrv}}-Sim'>{{Points}}</td>"
 						+ "<td id='{{Abbrv}}-ROW'>{{ROW}}</td>"
+						+ "<td id='{{Abbrv}}-Status'><strong>W</strong>: 0 | <strong>OTL</strong>: 0 | <strong>L</strong>: 0</td>"
 						+"</tr>";
 	for (var team in teams) {
 		var teamData = {"Abbrv": team, 
@@ -1064,6 +1065,9 @@ $(document).ready(function(){
 		var selectedHTML = Mustache.to_html(teamSelectedTemplate, teamData);
 		$(selectedHTML).appendTo("#selectedTeamsBody");
 		teams[team]["SELECT"] = 0;
+		teams[team]["W"] = 0;
+		teams[team]["L"] = 0;
+		teams[team]["OTL"] = 0;
 	}
 
 	$(".selected-row").each(function(i, obj){
@@ -1092,7 +1096,8 @@ $(document).ready(function(){
 		+"<td>" // winner radios
 		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Home}}' class='game-result' value='{{Home}}'>{{Home}}    "
 		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Away}}' class='game-result' value='{{Away}}'>{{Away}}    "
-		+ "</td><td id='{{GameID}}-WinPic'></td>";
+		+ "</td><td id='{{GameID}}-WinPic'></td>"
+		+ "<td>{{Month}}</td><td>{{Day}}</td>";
 
 	// Add games and write via template
 	for (var game in gamesLeft){
@@ -1109,7 +1114,9 @@ $(document).ready(function(){
 					// "Date": gameDate,
 					"Away": gamesLeft[game]["AWAY"],
 					"Home": gamesLeft[game]["HOME"],
-					"GameID": game
+					"GameID": game,
+					"Month": mm,
+					"Day": dd
 					};
 		var html = Mustache.to_html(gameTemplate, gameData);
 		$(html).appendTo("#gameData");
@@ -1209,6 +1216,9 @@ $(document).ready(function(){
 				teams[team]["CALC"] = teams[team]["CURRENT"];
 				teams[team]["CALC_ROW"] = teams[team]["ROW"];
 				teams[team]["CALC_GAMES_LEFT"] = teams[team]["GAMES_LEFT"];
+				teams[team]["W"] = 0;
+				teams[team]["L"] = 0;
+				teams[team]["OTL"] = 0;
 			// }
 			
 		}
@@ -1218,30 +1228,35 @@ $(document).ready(function(){
 			var winningTeam = gamesLeft[game]["WIN"];
 			var homeTeam = gamesLeft[game]["HOME"];
 			var awayTeam = gamesLeft[game]["AWAY"];
-			if (gamesLeft[game]["WIN"] !== undefined && gamesLeft[game]["WIN"] != ""){
+			if (winningTeam !== undefined && winningTeam != ""){
 				// if we are calculating points for the winner, then add
 				if (teams[winningTeam]["SELECT"] === 1){
 					// get the winning team, first. add 2 points.
 					teams[winningTeam]["CALC"] = teams[winningTeam]["CALC"] + 2;
+					teams[winningTeam]["W"] = teams[winningTeam]["W"] + 1;
 					// only add to ROW if not a shoot-out
 					if (gamesLeft[game]["OT"] !== "S"){
-						teams[winningTeam]["CALC_ROW"] = teams[winningTeam]["CALC_ROW"] + 1
+						teams[winningTeam]["CALC_ROW"] = teams[winningTeam]["CALC_ROW"] + 1;
 					}
+				}
+				// get loser team -- they are the team that did not win.
+				if (homeTeam === winningTeam){
+					var losingTeam = awayTeam;
+				}
+				else{
+					var losingTeam = homeTeam;
 				}
 				// if game went to OT, give out loser point.
 				if (gamesLeft[game]["OT"] === "O" || gamesLeft[game]["OT"] === "S"){
-					// Did the home team win?
-					if (homeTeam === winningTeam){
-						// if the away team lost & is being calculated, add a point.
-						if (teams[awayTeam]["SELECT"] === 1){
-							teams[awayTeam]["CALC"] = teams[awayTeam]["CALC"] + 1;
-						}
-					}
-					// Else, away team won. Home team should get a point if being calculated.
-					else if (teams[homeTeam]["SELECT"] === 1){
-						teams[homeTeam]["CALC"] = teams[homeTeam]["CALC"] + 1;
-					}
+					// Give losing team a OTL point.
+					teams[losingTeam]["CALC"] = teams[losingTeam]["CALC"] + 1;
+					teams[losingTeam]["OTL"] = teams[losingTeam]["OTL"] + 1;
 				}
+				// otherwise, the team just lost.
+				else{
+					teams[losingTeam]["L"] = teams[losingTeam]["L"] + 1;
+				}
+				
 
 			}
 		}
@@ -1249,14 +1264,18 @@ $(document).ready(function(){
 		// Update grid
 		for (var team in teams) {
 			if (teams[team]["SELECT"] === 1){
-				$("#" + team + "-Sim").text(teams[team]["CALC"]);
-				$("#" + team + "-ROW").text(teams[team]["CALC_ROW"]);
+				$("#" + team + "-Sim").text(teams[team]["CALC"]); // set simulated points
+				$("#" + team + "-ROW").text(teams[team]["CALC_ROW"]); // set simulated ROW
+				var statusText = "<strong>W</strong>: " + teams[team]["W"] +
+									" | <strong>OTL</strong>: " + teams[team]["OTL"] +
+									" | <strong>L</strong>: " + teams[team]["L"];
+				$("#" + team + "-Status").html(statusText)
 			}
 			
 		}
 
 	}
 	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
-	$("#gamesTable").DataTable({"order": [[0, "asc"]], paging: false, bInfo: false, columnDefs: [{"targets": 0, "type": "date-moment" }]});
+	$("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
 
 })
