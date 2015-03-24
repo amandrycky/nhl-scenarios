@@ -5,7 +5,7 @@ var teams =
 		"NAME": "Anaheim",
 		"SELECT": 1,
 		"CURRENT": 99,
-		"GAMES_LEFT": 9,
+		"GAMES_LEFT": 8,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -15,7 +15,7 @@ var teams =
 		"NAME": "Arizona",
 		"SELECT": 1,
 		"CURRENT": 50,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 16,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -35,7 +35,7 @@ var teams =
 		"NAME": "Buffalo",
 		"SELECT": 1,
 		"CURRENT": 47,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 12,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -45,7 +45,7 @@ var teams =
 		"NAME": "Carolina",
 		"SELECT": 1,
 		"CURRENT": 62,
-		"GAMES_LEFT": 11,
+		"GAMES_LEFT": 10,
 		"ROW": 22,
 		"CONFERENCE": "E",
 		"DIVISION": "M"			
@@ -54,9 +54,9 @@ var teams =
 	{
 		"NAME": "Calgary",
 		"SELECT": 1,
-		"CURRENT": 84,
-		"GAMES_LEFT": 10,
-		"ROW": 35,
+		"CURRENT": 86,
+		"GAMES_LEFT": 9,
+		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -64,9 +64,9 @@ var teams =
 	{
 		"NAME": "Chicago",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 11,
-		"ROW": 34,
+		"CURRENT": 94,
+		"GAMES_LEFT": 10,
+		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -85,7 +85,7 @@ var teams =
 		"NAME": "Colorado",
 		"SELECT": 1,
 		"CURRENT": 78,
-		"GAMES_LEFT": 11,
+		"GAMES_LEFT": 10,
 		"ROW": 24,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -94,9 +94,9 @@ var teams =
 	{
 		"NAME": "Dallas",
 		"SELECT": 1,
-		"CURRENT": 78,
-		"GAMES_LEFT": 10,
-		"ROW": 31,
+		"CURRENT": 80,
+		"GAMES_LEFT": 9,
+		"ROW": 32,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -115,7 +115,7 @@ var teams =
 		"NAME": "Edmonton",
 		"SELECT": 1,
 		"CURRENT": 53,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 15,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -134,9 +134,9 @@ var teams =
 	{
 		"NAME": "Los Angeles",
 		"SELECT": 1,
-		"CURRENT": 82,
-		"GAMES_LEFT": 11,
-		"ROW": 32,
+		"CURRENT": 84,
+		"GAMES_LEFT": 10,
+		"ROW": 33,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -144,9 +144,9 @@ var teams =
 	{
 		"NAME": "Minnesota",
 		"SELECT": 1,
-		"CURRENT": 87,
-		"GAMES_LEFT": 10,
-		"ROW": 37,
+		"CURRENT": 89,
+		"GAMES_LEFT": 9,
+		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -165,7 +165,7 @@ var teams =
 		"NAME": "New Jersey",
 		"SELECT": 1,
 		"CURRENT": 73,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -204,9 +204,9 @@ var teams =
 	{
 		"NAME": "Ottawa",
 		"SELECT": 1,
-		"CURRENT": 83,
-		"GAMES_LEFT": 11,
-		"ROW": 31,
+		"CURRENT": 85,
+		"GAMES_LEFT": 10,
+		"ROW": 32,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -235,7 +235,7 @@ var teams =
 		"NAME": "San Jose",
 		"SELECT": 1,
 		"CURRENT": 78,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 32,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -265,7 +265,7 @@ var teams =
 		"NAME": "Toronto",
 		"SELECT": 1,
 		"CURRENT": 60,
-		"GAMES_LEFT": 9,
+		"GAMES_LEFT": 8,
 		"ROW": 23,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -284,9 +284,9 @@ var teams =
 	{
 		"NAME": "Winnipeg",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 10,
-		"ROW": 30,
+		"CURRENT": 88,
+		"GAMES_LEFT": 9,
+		"ROW": 31,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -304,21 +304,6 @@ var teams =
 
 var gamesLeft = 
 {
-	"9":{
-		"HOME": "BUF",
-		"AWAY": "DAL",
-		"DATE": 1427068800000
-	},
-	"17":{
-		"HOME": "EDM",
-		"AWAY": "WPG",
-		"DATE": 1427068800000
-	},
-	"33":{
-		"HOME": "TOR",
-		"AWAY": "MIN",
-		"DATE": 1427068800000
-	},	
 	"1":{
 		"HOME": "DET",
 		"AWAY": "ARI",
@@ -409,7 +394,7 @@ var gamesLeft =
 		"AWAY": "CGY",
 		"DATE": 1428105600000
 	},
-	"29":{
+	"148":{
 		"HOME": "BOS",
 		"AWAY": "TOR",
 		"DATE": 1428105600000// 4/4
@@ -474,26 +459,6 @@ var gamesLeft =
 		"AWAY": "MTL",
 		"DATE": 1428710400000
 	},	
-	"35":{
-		"HOME": "LAK",
-		"AWAY": "NJD",
-		"DATE": 1427068800000
-	},
-	"36":{
-		"HOME": "CHI",
-		"AWAY": "CAR",
-		"DATE": 1427068800000
-	},
-	"37":{
-		"HOME": "SJS",
-		"AWAY": "OTT",
-		"DATE": 1427068800000
-	},
-	"38":{
-		"HOME": "COL",
-		"AWAY": "CGY",
-		"DATE": 1427068800000
-	},
 	"39":{
 		"HOME": "MIN",
 		"AWAY": "NYI",
@@ -1033,11 +998,24 @@ var gamesLeft =
 	"HOME": "CHI",
 	"AWAY": "COL",
 	"DATE": 1428710400000
+	},
+	"147":{
+		"HOME": "ARI",
+		"AWAY": "SJS",
+		"DATE": 1428105600000
 	}
 };
 
 var divisions = {"M": "Metropolitan", "A": "Atlantic", "P": "Pacific", "C": "Central"};
 var conferences = {"E": "Eastern", "W": "Western"};
+
+
+var preDefinedTeams = 
+{
+	"tankTeams": ["ARI", "BUF", "EDM"],
+	"easternPlayoff": ["FLA", "BOS", "OTT"],
+	"westernPlayoff": ["VAN", "LAK", "CGY", "WPG"]
+};
 
 $(document).ready(function(){
 	//DISPLAY TEAMS
@@ -1050,27 +1028,34 @@ $(document).ready(function(){
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
 						+ "<td id='{{Abbrv}}-Sim'>{{Points}}</td>"
 						+ "<td id='{{Abbrv}}-ROW'>{{ROW}}</td>"
+						+ "<td id='{{Abbrv}}-GL'>{{GamesLeft}}</td>"
+						+ "<td id='{{Abbrv}}-Status'><strong>W</strong>: 0 | <strong>OTL</strong>: 0 | <strong>L</strong>: 0</td>"
 						+"</tr>";
 	for (var team in teams) {
+		teams[team]["CALC_GAMES_LEFT"] = teams[team]["GAMES_LEFT"];
 		var teamData = {"Abbrv": team, 
 		  	"Name": teams[team]["NAME"], 
 		  	"Points": teams[team]["CURRENT"], 
 		  	"GamesLeft": teams[team]["CALC_GAMES_LEFT"], 
 		  	"ROW": teams[team]["ROW"],
 		  	"Conference": conferences[teams[team]["CONFERENCE"]],
-		  	"Division": divisions[teams[team]["DIVISION"]]};
+		  	"Division": divisions[teams[team]["DIVISION"]]}
 		var allHtml = Mustache.to_html(teamAllTemplate, teamData);
 		$(allHtml).appendTo("#tankTeams");
 		var selectedHTML = Mustache.to_html(teamSelectedTemplate, teamData);
 		$(selectedHTML).appendTo("#selectedTeamsBody");
 		teams[team]["SELECT"] = 0;
+		teams[team]["W"] = 0;
+		teams[team]["L"] = 0;
+		teams[team]["OTL"] = 0;
 	}
 
 	$(".selected-row").each(function(i, obj){
 		$(obj).hide();
 	});
 
-	
+	// start team table hidden
+	$("#teamTable").toggle();
 
 	function getSelectedTeams(){
 		var selectedTeams = []
@@ -1092,7 +1077,8 @@ $(document).ready(function(){
 		+"<td>" // winner radios
 		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Home}}' class='game-result' value='{{Home}}'>{{Home}}    "
 		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Away}}' class='game-result' value='{{Away}}'>{{Away}}    "
-		+ "</td><td id='{{GameID}}-WinPic'></td>";
+		+ "</td><td id='{{GameID}}-WinPic'></td>"
+		+ "<td>{{Month}}</td><td>{{Day}}</td>";
 
 	// Add games and write via template
 	for (var game in gamesLeft){
@@ -1109,7 +1095,9 @@ $(document).ready(function(){
 					// "Date": gameDate,
 					"Away": gamesLeft[game]["AWAY"],
 					"Home": gamesLeft[game]["HOME"],
-					"GameID": game
+					"GameID": game,
+					"Month": mm,
+					"Day": dd
 					};
 		var html = Mustache.to_html(gameTemplate, gameData);
 		$(html).appendTo("#gameData");
@@ -1139,7 +1127,6 @@ $(document).ready(function(){
 	  return getSelectedTeams().indexOf(team) > -1;
 	}
 
-
 	$(".game-result").change(function(){
 		var gameID = this.id.split("-")[0];
 		gamesLeft[gameID]["WIN"] = this.id.split("-")[1];
@@ -1154,6 +1141,31 @@ $(document).ready(function(){
 		var otType = this.id.split("-")[2];
 		gamesLeft[gameID]["OT"] = otType;	
 		updatePoints();
+	});
+
+	$("#prePopulateTeams").change(function(){
+		// first, unselect currently selected
+		for (var team in teams){
+			teams[team]["SELECT"] = 0;
+			$("#" + team + "-View").prop("checked", false);
+		}
+
+		// clear selected teams grid
+		$(".selected-row").each(function(i, obj){
+			$(obj).hide();
+		});
+
+		var teamType = $("#prePopulateTeams").val();
+		if (teamType !== ""){
+			for(var i=0; i < preDefinedTeams[teamType].length; i++){
+				teams[preDefinedTeams[teamType][i]]["SELECT"] = 1;
+				$("#" + preDefinedTeams[teamType][i] + "-View").prop("checked", true);
+				updateSelectedGrid(preDefinedTeams[teamType][i]);
+
+			}
+			updateGameGrid();
+		}
+
 	});
 
 	// When select team, update grid of games and SELECT state of team.
@@ -1209,6 +1221,9 @@ $(document).ready(function(){
 				teams[team]["CALC"] = teams[team]["CURRENT"];
 				teams[team]["CALC_ROW"] = teams[team]["ROW"];
 				teams[team]["CALC_GAMES_LEFT"] = teams[team]["GAMES_LEFT"];
+				teams[team]["W"] = 0;
+				teams[team]["L"] = 0;
+				teams[team]["OTL"] = 0;
 			// }
 			
 		}
@@ -1218,30 +1233,37 @@ $(document).ready(function(){
 			var winningTeam = gamesLeft[game]["WIN"];
 			var homeTeam = gamesLeft[game]["HOME"];
 			var awayTeam = gamesLeft[game]["AWAY"];
-			if (gamesLeft[game]["WIN"] !== undefined && gamesLeft[game]["WIN"] != ""){
+			if (winningTeam !== undefined && winningTeam != ""){
 				// if we are calculating points for the winner, then add
 				if (teams[winningTeam]["SELECT"] === 1){
+					teams[winningTeam]["CALC_GAMES_LEFT"] = teams[winningTeam]["CALC_GAMES_LEFT"] - 1;
 					// get the winning team, first. add 2 points.
 					teams[winningTeam]["CALC"] = teams[winningTeam]["CALC"] + 2;
+					teams[winningTeam]["W"] = teams[winningTeam]["W"] + 1;
 					// only add to ROW if not a shoot-out
 					if (gamesLeft[game]["OT"] !== "S"){
-						teams[winningTeam]["CALC_ROW"] = teams[winningTeam]["CALC_ROW"] + 1
+						teams[winningTeam]["CALC_ROW"] = teams[winningTeam]["CALC_ROW"] + 1;
 					}
 				}
+				// get loser team -- they are the team that did not win.
+				if (homeTeam === winningTeam){
+					var losingTeam = awayTeam;
+				}
+				else{
+					var losingTeam = homeTeam;
+				}
+				teams[losingTeam]["CALC_GAMES_LEFT"] = teams[losingTeam]["CALC_GAMES_LEFT"] - 1;
 				// if game went to OT, give out loser point.
 				if (gamesLeft[game]["OT"] === "O" || gamesLeft[game]["OT"] === "S"){
-					// Did the home team win?
-					if (homeTeam === winningTeam){
-						// if the away team lost & is being calculated, add a point.
-						if (teams[awayTeam]["SELECT"] === 1){
-							teams[awayTeam]["CALC"] = teams[awayTeam]["CALC"] + 1;
-						}
-					}
-					// Else, away team won. Home team should get a point if being calculated.
-					else if (teams[homeTeam]["SELECT"] === 1){
-						teams[homeTeam]["CALC"] = teams[homeTeam]["CALC"] + 1;
-					}
+					// Give losing team a OTL point.
+					teams[losingTeam]["CALC"] = teams[losingTeam]["CALC"] + 1;
+					teams[losingTeam]["OTL"] = teams[losingTeam]["OTL"] + 1;
 				}
+				// otherwise, the team just lost.
+				else{
+					teams[losingTeam]["L"] = teams[losingTeam]["L"] + 1;
+				}
+				
 
 			}
 		}
@@ -1249,14 +1271,18 @@ $(document).ready(function(){
 		// Update grid
 		for (var team in teams) {
 			if (teams[team]["SELECT"] === 1){
-				$("#" + team + "-Sim").text(teams[team]["CALC"]);
-				$("#" + team + "-ROW").text(teams[team]["CALC_ROW"]);
+				$("#" + team + "-Sim").text(teams[team]["CALC"]); // set simulated points
+				$("#" + team + "-ROW").text(teams[team]["CALC_ROW"]); // set simulated ROW
+				var statusText = "<strong>W</strong>: " + teams[team]["W"] +
+									" | <strong>OTL</strong>: " + teams[team]["OTL"] +
+									" | <strong>L</strong>: " + teams[team]["L"];
+				$("#" + team + "-Status").html(statusText)
+				$("#" + team + "-GL").text(teams[team]["CALC_GAMES_LEFT"]);
 			}
 			
 		}
 
 	}
 	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
-	$("#gamesTable").DataTable({"order": [[0, "asc"]], paging: false, bInfo: false, columnDefs: [{"targets": 0, "type": "date-moment" }]});
-
+	$("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
 })
