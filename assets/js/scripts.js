@@ -5,8 +5,8 @@ var teams =
 		"NAME": "Anaheim",
 		"SELECT": 1,
 		"CURRENT": 99,
-		"GAMES_LEFT": 8,
-		"ROW": 40,
+		"GAMES_LEFT": 7,
+		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -14,9 +14,9 @@ var teams =
 	{
 		"NAME": "Arizona",
 		"SELECT": 1,
-		"CURRENT": 50,
-		"GAMES_LEFT": 9,
-		"ROW": 16,
+		"CURRENT": 52,
+		"GAMES_LEFT": 8,
+		"ROW": 17,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -74,9 +74,9 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 70,
-		"GAMES_LEFT": 10,
-		"ROW": 26,
+		"CURRENT": 72,
+		"GAMES_LEFT": 9,
+		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -104,8 +104,8 @@ var teams =
 	{
 		"NAME": "Detroit",
 		"SELECT": 1,
-		"CURRENT": 89,
-		"GAMES_LEFT": 11,
+		"CURRENT": 90,
+		"GAMES_LEFT": 10,
 		"ROW": 36,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -125,7 +125,7 @@ var teams =
 		"NAME": "Florida",
 		"SELECT": 1,
 		"CURRENT": 80,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 25,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -134,9 +134,9 @@ var teams =
 	{
 		"NAME": "Los Angeles",
 		"SELECT": 1,
-		"CURRENT": 84,
-		"GAMES_LEFT": 10,
-		"ROW": 33,
+		"CURRENT": 86,
+		"GAMES_LEFT": 9,
+		"ROW": 34,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -144,8 +144,8 @@ var teams =
 	{
 		"NAME": "Minnesota",
 		"SELECT": 1,
-		"CURRENT": 89,
-		"GAMES_LEFT": 9,
+		"CURRENT": 91,
+		"GAMES_LEFT": 8,
 		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -154,8 +154,8 @@ var teams =
 	{
 		"NAME": "Montreal",
 		"SELECT": 1,
-		"CURRENT": 99,
-		"GAMES_LEFT": 9,
+		"CURRENT": 100,
+		"GAMES_LEFT": 8,
 		"ROW": 40,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -174,9 +174,9 @@ var teams =
 	{
 		"NAME": "Nashville",
 		"SELECT": 1,
-		"CURRENT": 96,
-		"GAMES_LEFT": 9,
-		"ROW": 38,
+		"CURRENT": 98,
+		"GAMES_LEFT": 8,
+		"ROW": 39,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -184,8 +184,8 @@ var teams =
 	{
 		"NAME": "NY Islanders",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 9,
+		"CURRENT": 93,
+		"GAMES_LEFT": 8,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -195,7 +195,7 @@ var teams =
 		"NAME": "NY Rangers",
 		"SELECT": 1,
 		"CURRENT": 99,
-		"GAMES_LEFT": 11,
+		"GAMES_LEFT": 10,
 		"ROW": 42,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -224,8 +224,8 @@ var teams =
 	{
 		"NAME": "Pittsburgh",
 		"SELECT": 1,
-		"CURRENT": 90,
-		"GAMES_LEFT": 10,
+		"CURRENT": 91,
+		"GAMES_LEFT": 9,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -244,9 +244,9 @@ var teams =
 	{
 		"NAME": "St. Louis",
 		"SELECT": 1,
-		"CURRENT": 97,
-		"GAMES_LEFT": 9,
-		"ROW": 36,
+		"CURRENT": 99,
+		"GAMES_LEFT": 8,
+		"ROW": 37,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -254,9 +254,9 @@ var teams =
 	{
 		"NAME": "Tampa Bay",
 		"SELECT": 1,
-		"CURRENT": 97,
-		"GAMES_LEFT": 9,
-		"ROW": 35,
+		"CURRENT": 99,
+		"GAMES_LEFT": 8,
+		"ROW": 44,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -274,9 +274,9 @@ var teams =
 	{
 		"NAME": "Vancouver",
 		"SELECT": 1,
-		"CURRENT": 88,
-		"GAMES_LEFT": 10,
-		"ROW": 37,
+		"CURRENT": 90,
+		"GAMES_LEFT": 9,
+		"ROW": 39,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -285,7 +285,7 @@ var teams =
 		"NAME": "Winnipeg",
 		"SELECT": 1,
 		"CURRENT": 88,
-		"GAMES_LEFT": 9,
+		"GAMES_LEFT": 8,
 		"ROW": 31,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -304,11 +304,6 @@ var teams =
 
 var gamesLeft = 
 {
-	"1":{
-		"HOME": "DET",
-		"AWAY": "ARI",
-		"DATE": 1427155200000
-	},
 	"18":{
 		"HOME": "EDM",
 		"AWAY": "COL",
@@ -459,41 +454,6 @@ var gamesLeft =
 		"AWAY": "MTL",
 		"DATE": 1428710400000
 	},	
-	"39":{
-		"HOME": "MIN",
-		"AWAY": "NYI",
-		"DATE": 1427155200000
-	},
-	"40":{
-		"HOME": "LAK",
-		"AWAY": "NYR",
-		"DATE": 1427155200000
-	},
-	"41":{
-		"HOME": "STL",
-		"AWAY": "PIT",
-		"DATE": 1427155200000
-	},
-	"42":{
-		"HOME": "ANA",
-		"AWAY": "CBJ",
-		"DATE": 1427155200000
-	},
-	"43":{
-		"HOME": "FLA",
-		"AWAY": "TBL",
-		"DATE": 1427155200000
-	},
-	"44":{
-		"HOME": "MTL",
-		"AWAY": "NSH",
-		"DATE": 1427155200000
-	},
-	"45":{
-		"HOME": "WPG",
-		"AWAY": "VAN",
-		"DATE": 1427155200000
-	},
 	"46":{
 		"HOME": "CHI",
 		"AWAY": "PHI",
