@@ -54,8 +54,8 @@ var teams =
 	{
 		"NAME": "Calgary",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 9,
+		"CURRENT": 87,
+		"GAMES_LEFT": 8,
 		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -65,7 +65,7 @@ var teams =
 		"NAME": "Chicago",
 		"SELECT": 1,
 		"CURRENT": 94,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -85,7 +85,7 @@ var teams =
 		"NAME": "Colorado",
 		"SELECT": 1,
 		"CURRENT": 78,
-		"GAMES_LEFT": 10,
+		"GAMES_LEFT": 9,
 		"ROW": 24,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -94,8 +94,8 @@ var teams =
 	{
 		"NAME": "Dallas",
 		"SELECT": 1,
-		"CURRENT": 80,
-		"GAMES_LEFT": 9,
+		"CURRENT": 82,
+		"GAMES_LEFT": 8,
 		"ROW": 32,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -114,9 +114,9 @@ var teams =
 	{
 		"NAME": "Edmonton",
 		"SELECT": 1,
-		"CURRENT": 53,
-		"GAMES_LEFT": 9,
-		"ROW": 15,
+		"CURRENT": 55,
+		"GAMES_LEFT": 8,
+		"ROW": 16,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -214,9 +214,9 @@ var teams =
 	{
 		"NAME": "Philadelphia",
 		"SELECT": 1,
-		"CURRENT": 74,
-		"GAMES_LEFT": 8,
-		"ROW": 26,
+		"CURRENT": 76,
+		"GAMES_LEFT": 7,
+		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -304,11 +304,6 @@ var teams =
 
 var gamesLeft = 
 {
-	"18":{
-		"HOME": "EDM",
-		"AWAY": "COL",
-		"DATE": 1427241600000
-	},
 	"2":{
 		"HOME": "BUF",
 		"AWAY": "ARI",
@@ -454,16 +449,6 @@ var gamesLeft =
 		"AWAY": "MTL",
 		"DATE": 1428710400000
 	},	
-	"46":{
-		"HOME": "CHI",
-		"AWAY": "PHI",
-		"DATE": 1427241600000
-	},
-	"47":{
-		"HOME": "DAL",
-		"AWAY": "CGY",
-		"DATE": 1427241600000
-	},
 	"48":{
 		"HOME": "ANA",
 		"AWAY": "BOS",
