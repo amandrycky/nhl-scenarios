@@ -55,7 +55,7 @@ var teams =
 		"NAME": "Calgary",
 		"SELECT": 1,
 		"CURRENT": 87,
-		"GAMES_LEFT": 8,
+		"GAMES_LEFT": 7,
 		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -65,7 +65,7 @@ var teams =
 		"NAME": "Chicago",
 		"SELECT": 1,
 		"CURRENT": 94,
-		"GAMES_LEFT": 9,
+		"GAMES_LEFT": 8,
 		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -74,9 +74,9 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 72,
-		"GAMES_LEFT": 9,
-		"ROW": 27,
+		"CURRENT": 74,
+		"GAMES_LEFT": 8,
+		"ROW": 28,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -95,7 +95,7 @@ var teams =
 		"NAME": "Dallas",
 		"SELECT": 1,
 		"CURRENT": 82,
-		"GAMES_LEFT": 8,
+		"GAMES_LEFT": 7,
 		"ROW": 32,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -114,9 +114,9 @@ var teams =
 	{
 		"NAME": "Edmonton",
 		"SELECT": 1,
-		"CURRENT": 55,
-		"GAMES_LEFT": 8,
-		"ROW": 16,
+		"CURRENT": 57,
+		"GAMES_LEFT": 7,
+		"ROW": 17,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -144,9 +144,9 @@ var teams =
 	{
 		"NAME": "Minnesota",
 		"SELECT": 1,
-		"CURRENT": 91,
-		"GAMES_LEFT": 8,
-		"ROW": 38,
+		"CURRENT": 93,
+		"GAMES_LEFT": 7,
+		"ROW": 39,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
