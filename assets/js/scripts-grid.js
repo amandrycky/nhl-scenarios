@@ -788,6 +788,12 @@ var preDefinedTeams =
 };
 
 $(document).ready(function(){
+
+	// var teams;
+	console.log("doc load");
+
+
+
 	//DISPLAY TEAMS
 	var teamAllTemplate = "<tr><td><input type='checkbox' id='{{Abbrv}}-View' class='standings-view'></td><td><img height='20' width='20' src='assets/img/{{Abbrv}}.png'></img></td><td>{{Name}}</td>" 
 						+"<td>{{Conference}}</td><td>{{Division}}</td>"
@@ -801,6 +807,7 @@ $(document).ready(function(){
 						+ "<td id='{{Abbrv}}-GL'>{{GamesLeft}}</td>"
 						+ "<td id='{{Abbrv}}-Status'><strong>W</strong>: 0 | <strong>OTL</strong>: 0 | <strong>L</strong>: 0</td>"
 						+"</tr>";
+
 	for (var team in teams) {
 		teams[team]["CALC_GAMES_LEFT"] = teams[team]["GAMES_LEFT"];
 		var teamData = {"Abbrv": team, 
@@ -837,56 +844,140 @@ $(document).ready(function(){
 		return selectedTeams;
 	}
 
-	// GENERATE GAMES
-	var gameTemplate = "<tr id='{{GameID}}-Row' class='GameRow'><td>{{Date}}</td><td>{{Home}}</td><td>{{Away}}</td>"
-		+ "<td>" // ot radios
-		+ "<input type='radio' name='{{GameID}}-OT' id='{{GameID}}-OT-N' class='game-ot' value='{{GameID}}-OT-N' checked>None  " 
-		+ "<input type='radio' name='{{GameID}}-OT' id='{{GameID}}-OT-O' class='game-ot' value='{{GameID}}-OT-O'>OT  "
-		+ "<input type='radio' name='{{GameID}}-OT' id='{{GameID}}-OT-S' class='game-ot' value='{{GameID}}-OT-S'>SO  "
-		+ "</td>"
-		+"<td>" // winner radios
-		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Home}}' class='game-result' value='{{Home}}'>{{Home}}    "
-		+ "<input type='radio' name='{{GameID}}-Winner' id='{{GameID}}-{{Away}}' class='game-result' value='{{Away}}'>{{Away}}    "
-		+ "</td><td id='{{GameID}}-WinPic'></td>"
-		+ "<td>{{Month}}</td><td>{{Day}}</td>";
+	// Get date array of upcoming games
+	var firstDate = 1427673600000;
+	var lastDate = 1428710400000;
+	var dayMillisec = 1000 * 60 * 60 * 24; // days in milliseconds
 
-	// Add games and write via template
-	for (var game in gamesLeft){
-		var gameDate = new Date(parseInt(gamesLeft[game]["DATE"]));
-		gameDate.setDate(gameDate.getDate() + 1); //add 1 to date
+	var gameHtml = "";
+	var gameHeaderHtml = "<tr><th>Date</th>";
+
+	for (var team in teams){
+		gameHeaderHtml += "<th id='" + team +"-Header' class ='" + team +" TeamCol'>" + team + "</th>";
+	}
+	$(gameHeaderHtml).appendTo("#gameHeader");
+
+
+	// outer loop for rows = dates
+	for (var date = firstDate; date <= lastDate; date = date + dayMillisec){
+		//  inner loop for columns = teams
+
+		var gameDate = new Date(parseInt(date));
+		gameDate.setDate(gameDate.getDate() + 1); //add 1 to date as js starts at 0.
 		var dateStr = gameDate.getFullYear();
 		var dd = gameDate.getDate();
 		var mm = gameDate.getMonth() + 1;
 		var y = gameDate.getFullYear();
-
 		var formattedDate = mm + '/'+ dd + '/'+ y;
-		var gameData = {
-					"Date": formattedDate, 
-					// "Date": gameDate,
-					"Away": gamesLeft[game]["AWAY"],
-					"Home": gamesLeft[game]["HOME"],
-					"GameID": game,
-					"Month": mm,
-					"Day": dd
-					};
-		var html = Mustache.to_html(gameTemplate, gameData);
-		$(html).appendTo("#gameData");
-		gamesLeft[game]["OT"] = "N";
-		// if team is one of the selected auto-check. first, check away. do this to avoid duplicate attempts at selecting.
-		// if (isSelectedTeam(gamesLeft[game]["AWAY"])){
-		// 	$("#" + game + "-" + gamesLeft[game]["HOME"]).prop("checked", true);
-		// 	gamesLeft[game]["WIN"] = gamesLeft[game]["HOME"];
-		// 	$("#" + game + "-WinPic").html("<img height='20' width='20' src='assets/img/" + gamesLeft[game]["HOME"] + ".png'></img>");
-		// }
-		// // if not, selected team is the home team. check that one.
-		// else{
-		// 	$("#" + game + "-" + gamesLeft[game]["AWAY"]).prop("checked", true);
-		// 	gamesLeft[game]["WIN"] = gamesLeft[game]["AWAY"];
-		// 	$("#" + game + "-WinPic").html("<img height='20' width='20' src='assets/img/" + gamesLeft[game]["AWAY"] + ".png'></img>");
-		// }
+		gameHtml += "<tr><td>" + formattedDate + "</td>";
+		for (var team in teams){
+			// column per team
+			gameHtml += "<td id='" + team + "-" + date + "' class ='" + team +" TeamCol'></td>";
+
+		}
+		gameHtml += "</tr>";
+	}
+	$(gameHtml).appendTo("#gameData");
+
+	var homeGameTemplate = "<table id='{{GameID}}-Table-{{Home}}' class='GameTable'>"
+		+ "<td>{{IntroStr}}</td>"
+		+"<td>" // winner radios
+		+ "<input type='radio' name='{{GameID}}-Winner-{{Home}}' id='{{GameID}}-WIN-{{Home}}-{{Away}}' class='game-result' value='{{Home}}'>W<br>"
+		+ "<input type='radio' name='{{GameID}}-Winner-{{Home}}' id='{{GameID}}-LOSE-{{Home}}-{{Away}}' class='game-result' value='{{Away}}'>L<br>"
+		+ "</td>"
+		+ "<td>" // ot radios
+		+ "<input type='radio' name='{{GameID}}-OT-{{Home}}' id='{{GameID}}-OT-N-{{Home}}-{{Away}}' class='game-ot' value='{{GameID}}-OT-N-{{Home}}' checked>None<br>" 
+		+ "<input type='radio' name='{{GameID}}-OT-{{Home}}' id='{{GameID}}-OT-O-{{Home}}-{{Away}}' class='game-ot' value='{{GameID}}-OT-O-{{Home}}'>OT<br>"
+		+ "<input type='radio' name='{{GameID}}-OT-{{Home}}' id='{{GameID}}-OT-S-{{Home}}-{{Away}}' class='game-ot' value='{{GameID}}-OT-S-{{Home}}'>SO  "
+		+ "</td>"
+		+ "</table>";
+
+
+	var awayGameTemplate = "<table id='{{GameID}}-Table-{{Away}}' class='GameTable'>"
+		+ "<td>{{IntroStr}}</td>"
+		+"<td>" // winner radios
+		+ "<input type='radio' name='{{GameID}}-Winner-{{Away}}' id='{{GameID}}-WIN-{{Away}}-{{Home}}' class='game-result' value='{{Away}}'>W<br>"
+		+ "<input type='radio' name='{{GameID}}-Winner-{{Away}}' id='{{GameID}}-LOSE-{{Away}}-{{Home}}' class='game-result' value='{{Home}}'>L<br>"
+		+ "</td>"
+		+ "<td>" // ot radios
+		+ "<input type='radio' name='{{GameID}}-OT-{{Away}}' id='{{GameID}}-OT-N-{{Away}}-{{Home}}' class='game-ot' value='{{GameID}}-OT-N-{{Away}}' checked>None<br>" 
+		+ "<input type='radio' name='{{GameID}}-OT-{{Away}}' id='{{GameID}}-OT-O-{{Away}}-{{Home}}' class='game-ot' value='{{GameID}}-OT-O-{{Away}}'>OT<br>"
+		+ "<input type='radio' name='{{GameID}}-OT-{{Away}}' id='{{GameID}}-OT-S-{{Away}}-{{Home}}' class='game-ot' value='{{GameID}}-OT-S-{{Away}}'>SO"
+		+ "</td>"
+		+ "</table>";
+
+	// inject gameinfo where appropriate
+	for (var game in gamesLeft){
+		var homeIdStr = gamesLeft[game]["HOME"] + "-" + gamesLeft[game]["DATE"];
+		var awayIdStr = gamesLeft[game]["AWAY"] + "-" + gamesLeft[game]["DATE"];
+		var homeHtml = "vs " + gamesLeft[game]["AWAY"];
+		var awayHtml = "@ " + gamesLeft[game]["HOME"];
+		// homeHtml = "";
+		// awayHtml = "";
+
+
+		var homeGameData = {
+				// "Date": gameDate,
+				"Away": gamesLeft[game]["AWAY"],
+				"Home": gamesLeft[game]["HOME"],
+				"GameID": game,
+				"IntroStr": homeHtml
+				};
+		var awayGameData ={
+				// "Date": gameDate,
+				"Away": gamesLeft[game]["AWAY"],
+				"Home": gamesLeft[game]["HOME"],
+				"GameID": game,
+				"IntroStr": awayHtml
+			}
+		var homeInHtml = Mustache.to_html(homeGameTemplate, homeGameData);
+		var awayInHtml = Mustache.to_html(awayGameTemplate, awayGameData);
+		$("#" + homeIdStr).html(homeInHtml);
+		$("#" + awayIdStr).html(awayInHtml);
 	}
 
-	$(".GameRow").each(function(i, obj){
+
+
+	// GENERATE GAMES
+
+
+	// // Add games and write via template
+	// for (var game in gamesLeft){
+	// 	var gameDate = new Date(parseInt(gamesLeft[game]["DATE"]));
+	// 	gameDate.setDate(gameDate.getDate() + 1); //add 1 to date
+	// 	var dateStr = gameDate.getFullYear();
+	// 	var dd = gameDate.getDate();
+	// 	var mm = gameDate.getMonth() + 1;
+	// 	var y = gameDate.getFullYear();
+
+	// 	var formattedDate = mm + '/'+ dd + '/'+ y;
+	// 	var gameData = {
+	// 				"Date": formattedDate, 
+	// 				// "Date": gameDate,
+	// 				"Away": gamesLeft[game]["AWAY"],
+	// 				"Home": gamesLeft[game]["HOME"],
+	// 				"GameID": game,
+	// 				"Month": mm,
+	// 				"Day": dd
+	// 				};
+	// 	var html = Mustache.to_html(gameTemplate, gameData);
+	// 	$(html).appendTo("#gameData");
+	// 	gamesLeft[game]["OT"] = "N";
+	// 	// if team is one of the selected auto-check. first, check away. do this to avoid duplicate attempts at selecting.
+	// 	// if (isSelectedTeam(gamesLeft[game]["AWAY"])){
+	// 	// 	$("#" + game + "-" + gamesLeft[game]["HOME"]).prop("checked", true);
+	// 	// 	gamesLeft[game]["WIN"] = gamesLeft[game]["HOME"];
+	// 	// 	$("#" + game + "-WinPic").html("<img height='20' width='20' src='assets/img/" + gamesLeft[game]["HOME"] + ".png'></img>");
+	// 	// }
+	// 	// // if not, selected team is the home team. check that one.
+	// 	// else{
+	// 	// 	$("#" + game + "-" + gamesLeft[game]["AWAY"]).prop("checked", true);
+	// 	// 	gamesLeft[game]["WIN"] = gamesLeft[game]["AWAY"];
+	// 	// 	$("#" + game + "-WinPic").html("<img height='20' width='20' src='assets/img/" + gamesLeft[game]["AWAY"] + ".png'></img>");
+	// 	// }
+	// }
+
+	$(".TeamCol").each(function(i, obj){
 		$(obj).hide();
 	});
 
@@ -898,18 +989,36 @@ $(document).ready(function(){
 	}
 
 	$(".game-result").change(function(){
-		var gameID = this.id.split("-")[0];
-		gamesLeft[gameID]["WIN"] = this.id.split("-")[1];
-		$("#" + gameID + "-WinPic").html("<img height='20' width='20' src='assets/img/" + this.id.split("-")[1] + ".png'></img>");
+		var idArr = this.id.split("-");
+		var gameID = idArr[0];
+		var typeID = idArr[1];
+		var teamID = idArr[2];
+		var oppID = idArr[3];
+		if (typeID == "WIN"){
+			gamesLeft[gameID]["WIN"] = teamID;
+			// set loss in corresponding grid
+			$("#" + gameID + "-LOSE-" + oppID + "-" + teamID).prop("checked", true);
+		}
+		else{
+			gamesLeft[gameID]["WIN"] = oppID;
+			$("#" + gameID + "-WIN-" + oppID + "-" + teamID).prop("checked", true);
+		}
+
 		updatePoints();
 	});
 
 	// When OT is placed in, update point totals
 	$(".game-ot").change(function(){
 		//  Update gamesLeft object
-		var gameID = this.id.split("-")[0];
-		var otType = this.id.split("-")[2];
-		gamesLeft[gameID]["OT"] = otType;	
+		var idArr = this.id.split("-");
+		var gameID = idArr[0];
+		var otType = idArr[2];
+		var teamID = idArr[3];
+		var oppID = idArr[4];
+		gamesLeft[gameID]["OT"] = otType;
+		//update ui for game in opp. team
+		$("#" + gameID + "-OT-" + otType + "-" + oppID + "-" + teamID).prop("checked", true);	
+
 		updatePoints();
 	});
 
@@ -963,12 +1072,10 @@ $(document).ready(function(){
 	// Update grid view based on selected teams.
 	function updateGameGrid(){
 		// hide teams not currently selected
-		$(".GameRow").each(function(i, obj){
-			var gameID = obj.id.split("-")[0];
-			var homeTeam = gamesLeft[gameID]["HOME"];
-			var awayTeam = gamesLeft[gameID]["AWAY"];
+		$(".TeamCol").each(function(i, obj){
+			var teamID = obj.id.split("-")[0];
 
-			if (isSelectedTeam(homeTeam) || isSelectedTeam(awayTeam)){
+			if (isSelectedTeam(teamID)){
 				$(obj).show();
 			}
 			else{
@@ -1034,7 +1141,6 @@ $(document).ready(function(){
 					teams[losingTeam]["L"] = teams[losingTeam]["L"] + 1;
 				}
 				
-
 			}
 		}
 
@@ -1054,5 +1160,5 @@ $(document).ready(function(){
 
 	}
 	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
-	$("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
+	// $("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
 })

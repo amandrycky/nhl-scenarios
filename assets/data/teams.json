@@ -1,0 +1,302 @@
+{
+	"ANA": 
+	{
+		"NAME": "Anaheim",
+		"SELECT": 1,
+		"CURRENT": 103,
+		"GAMES_LEFT": 5,
+		"ROW": 40,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"ARI": 
+	{
+		"NAME": "Arizona",
+		"SELECT": 1,
+		"CURRENT": 54,
+		"GAMES_LEFT": 6,
+		"ROW": 18,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"BOS":
+	{
+		"NAME": "Boston",
+		"SELECT": 1,
+		"CURRENT": 87,
+		"GAMES_LEFT": 7,
+		"ROW": 34,
+		"CONFERENCE": "E",
+		"DIVISION": "A"		
+	},
+	"BUF": 
+	{
+		"NAME": "Buffalo",
+		"SELECT": 1,
+		"CURRENT": 48,
+		"GAMES_LEFT": 7,
+		"ROW": 12,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"CAR": 
+	{
+		"NAME": "Carolina",
+		"SELECT": 1,
+		"CURRENT": 66,
+		"GAMES_LEFT": 8,
+		"ROW": 24,
+		"CONFERENCE": "E",
+		"DIVISION": "M"			
+	},
+	"CGY": 
+	{
+		"NAME": "Calgary",
+		"SELECT": 1,
+		"CURRENT": 87,
+		"GAMES_LEFT": 7,
+		"ROW": 36,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"CHI": 
+	{
+		"NAME": "Chicago",
+		"SELECT": 1,
+		"CURRENT": 94,
+		"GAMES_LEFT": 8,
+		"ROW": 35,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"CBJ": 
+	{
+		"NAME": "Columbus",
+		"SELECT": 1,
+		"CURRENT": 76,
+		"GAMES_LEFT": 7,
+		"ROW": 29,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"COL": 
+	{
+		"NAME": "Colorado",
+		"SELECT": 1,
+		"CURRENT": 82,
+		"GAMES_LEFT": 7,
+		"ROW": 26,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"DAL": 
+	{
+		"NAME": "Dallas",
+		"SELECT": 1,
+		"CURRENT": 84,
+		"GAMES_LEFT": 6,
+		"ROW": 33,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"DET": 
+	{
+		"NAME": "Detroit",
+		"SELECT": 1,
+		"CURRENT": 92,
+		"GAMES_LEFT": 8,
+		"ROW": 37,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"EDM": 
+	{
+		"NAME": "Edmonton",
+		"SELECT": 1,
+		"CURRENT": 57,
+		"GAMES_LEFT": 7,
+		"ROW": 17,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"FLA": 
+	{
+		"NAME": "Florida",
+		"SELECT": 1,
+		"CURRENT": 83,
+		"GAMES_LEFT": 7,
+		"ROW": 26,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"LAK": 
+	{
+		"NAME": "Los Angeles",
+		"SELECT": 1,
+		"CURRENT": 88,
+		"GAMES_LEFT": 7,
+		"ROW": 35,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"MIN": 
+	{
+		"NAME": "Minnesota",
+		"SELECT": 1,
+		"CURRENT": 95,
+		"GAMES_LEFT": 6,
+		"ROW": 40,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"MTL": 
+	{
+		"NAME": "Montreal",
+		"SELECT": 1,
+		"CURRENT": 102,
+		"GAMES_LEFT": 6,
+		"ROW": 41,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"NJD": 
+	{
+		"NAME": "New Jersey",
+		"SELECT": 1,
+		"CURRENT": 74,
+		"GAMES_LEFT": 7,
+		"ROW": 27,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"NSH": 
+	{
+		"NAME": "Nashville",
+		"SELECT": 1,
+		"CURRENT": 102,
+		"GAMES_LEFT": 6,
+		"ROW": 41,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"NYI": 
+	{
+		"NAME": "NY Islanders",
+		"SELECT": 1,
+		"CURRENT": 93,
+		"GAMES_LEFT": 6,
+		"ROW": 37,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"NYR": 
+	{
+		"NAME": "NY Rangers",
+		"SELECT": 1,
+		"CURRENT": 101,
+		"GAMES_LEFT": 8,
+		"ROW": 43,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"OTT": 
+	{
+		"NAME": "Ottawa",
+		"SELECT": 1,
+		"CURRENT": 86,
+		"GAMES_LEFT": 8,
+		"ROW": 32,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"PHI": 
+	{
+		"NAME": "Philadelphia",
+		"SELECT": 1,
+		"CURRENT": 77,
+		"GAMES_LEFT": 6,
+		"ROW": 27,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"PIT": 
+	{
+		"NAME": "Pittsburgh",
+		"SELECT": 1,
+		"CURRENT": 93,
+		"GAMES_LEFT": 7,
+		"ROW": 38,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	},
+	"SJS": 
+	{
+		"NAME": "San Jose",
+		"SELECT": 1,
+		"CURRENT": 82,
+		"GAMES_LEFT": 7,
+		"ROW": 33,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"STL": 
+	{
+		"NAME": "St. Louis",
+		"SELECT": 1,
+		"CURRENT": 99,
+		"GAMES_LEFT": 7,
+		"ROW": 37,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"TBL": 
+	{
+		"NAME": "Tampa Bay",
+		"SELECT": 1,
+		"CURRENT": 99,
+		"GAMES_LEFT": 6,
+		"ROW": 44,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"TOR": 
+	{
+		"NAME": "Toronto",
+		"SELECT": 1,
+		"CURRENT": 62,
+		"GAMES_LEFT": 7,
+		"ROW": 24,
+		"CONFERENCE": "E",
+		"DIVISION": "A"	
+	},
+	"VAN": 
+	{
+		"NAME": "Vancouver",
+		"SELECT": 1,
+		"CURRENT": 91,
+		"GAMES_LEFT": 7,
+		"ROW": 39,
+		"CONFERENCE": "W",
+		"DIVISION": "P"
+	},
+	"WPG": 
+	{
+		"NAME": "Winnipeg",
+		"SELECT": 1,
+		"CURRENT": 90,
+		"GAMES_LEFT": 7,
+		"ROW": 32,
+		"CONFERENCE": "W",
+		"DIVISION": "C"
+	},
+	"WSH": 
+	{
+		"NAME": "Washington",
+		"SELECT": 1,
+		"CURRENT": 90,
+		"GAMES_LEFT": 7,
+		"ROW": 36,
+		"CONFERENCE": "E",
+		"DIVISION": "M"	
+	}
+}

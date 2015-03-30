@@ -1,0 +1,512 @@
+{		
+	"4":{
+		"HOME": "ARI",
+		"AWAY": "BUF",
+		"DATE": 1427673600000
+	},
+	"20":{
+		"HOME": "COL",
+		"AWAY": "EDM",
+		"DATE": 1427673600000
+	},		
+	"30":{
+		"HOME": "TOR",
+		"AWAY": "TBL",
+		"DATE": 1427760000000
+	},		
+	"11":{
+		"HOME": "BUF",
+		"AWAY": "TOR",
+		"DATE": 1427846400000
+	},
+	"21":{
+		"HOME": "ANA",
+		"AWAY": "EDM",
+		"DATE": 1427846400000
+	},					
+	"22":{
+		"HOME": "LAK",
+		"AWAY": "EDM",
+		"DATE": 1427932800000
+	},		
+	"5":{
+		"HOME": "SJS",
+		"AWAY": "ARI",
+		"DATE": 1428019200000
+	},
+	"12":{
+		"HOME": "BUF",
+		"AWAY": "CHI",
+		"DATE": 1428019200000
+	},
+	"13":{
+		"HOME": "NYI",
+		"AWAY": "BUF",
+		"DATE": 1428105600000
+	},
+	"23":{
+		"HOME": "EDM",
+		"AWAY": "CGY",
+		"DATE": 1428105600000
+	},
+	"148":{
+		"HOME": "BOS",
+		"AWAY": "TOR",
+		"DATE": 1428105600000
+	},						
+	"29":{
+		"HOME": "TOR",
+		"AWAY": "OTT",
+		"DATE": 1428192000000 
+	},	
+	"14":{
+		"HOME": "BUF",
+		"AWAY": "CAR",
+		"DATE": 1428278400000
+	},
+	"6":{
+		"HOME": "ARI",
+		"AWAY": "CGY",
+		"DATE": 1428364800000
+	},
+	"24":{
+		"HOME": "EDM",
+		"AWAY": "LAK",
+		"DATE": 1428364800000
+	},	
+	"28":{
+		"HOME": "CBJ",
+		"AWAY": "TOR",
+		"DATE": 1428451200000
+	},	
+	"7":{
+		"HOME": "VAN",
+		"AWAY": "ARI",
+		"DATE": 1428537600000
+	},
+	"25":{
+		"HOME": "EDM",
+		"AWAY": "SJS",
+		"DATE": 1428537600000
+	},			
+	"15":{
+		"HOME": "CBJ",
+		"AWAY": "BUF",
+		"DATE": 1428624000000
+	},
+	"8":{
+		"HOME": "ANA",
+		"AWAY": "ARI",
+		"DATE": 1428710400000
+	},
+	"16":{
+		"HOME": "BUF",
+		"AWAY": "PIT",
+		"DATE": 1428710400000
+	},
+	"26":{
+		"HOME": "VAN",
+		"AWAY": "EDM",
+		"DATE": 1428710400000
+	},
+	"27":{
+		"HOME": "TOR",
+		"AWAY": "MTL",
+		"DATE": 1428710400000
+	},	
+	"69":{
+		"HOME": "WSH",
+		"AWAY": "NYR",
+		"DATE": 1427587200000
+	},
+	"70":{
+		"HOME": "BOS",
+		"AWAY": "CAR",
+		"DATE": 1427587200000
+	},
+	"71":{
+	"HOME": "FLA",
+	"AWAY": "OTT",
+	"DATE": 1427587200000
+	},
+	"72":{
+	"HOME": "DET",
+	"AWAY": "NYI",
+	"DATE": 1427587200000
+	},
+	"73":{
+	"HOME": "CGY",
+	"AWAY": "NSH",
+	"DATE": 1427587200000
+	},
+	"74":{
+	"HOME": "ANA",
+	"AWAY": "NJD",
+	"DATE": 1427587200000
+	},
+	"75":{
+	"HOME": "SJS",
+	"AWAY": "PIT",
+	"DATE": 1427587200000
+	},
+	"76":{
+	"HOME": "CHI",
+	"AWAY": "WPG",
+	"DATE": 1427587200000
+	},
+	"77":{
+	"HOME": "TBL",
+	"AWAY": "MTL",
+	"DATE": 1427673600000
+	},
+	"78":{
+	"HOME": "VAN",
+	"AWAY": "STL",
+	"DATE": 1427673600000
+	},
+	"79":{
+	"HOME": "LAK",
+	"AWAY": "CHI",
+	"DATE": 1427673600000
+	},
+	"80":{
+	"HOME": "CGY",
+	"AWAY": "DAL",
+	"DATE": 1427673600000
+	},
+	"81":{
+	"HOME": "FLA",
+	"AWAY": "BOS",
+	"DATE": 1427760000000
+	},
+	"82":{
+	"HOME": "NJD",
+	"AWAY": "CBJ",
+	"DATE": 1427760000000
+	},
+	"83":{
+	"HOME": "CAR",
+	"AWAY": "WSH",
+	"DATE": 1427760000000
+	},
+	"84":{
+	"HOME": "OTT",
+	"AWAY": "DET",
+	"DATE": 1427760000000
+	},
+	"85":{
+	"HOME": "NYR",
+	"AWAY": "WPG",
+	"DATE": 1427760000000
+	},
+	"86":{
+	"HOME": "VAN",
+	"AWAY": "NSH",
+	"DATE": 1427760000000
+	},
+	"87":{
+	"HOME": "PHI",
+	"AWAY": "PIT",
+	"DATE": 1427846400000
+	},
+	"88":{
+	"HOME": "COL",
+	"AWAY": "SJS",
+	"DATE": 1427846400000
+	},
+	"89":{
+	"HOME": "NYI",
+	"AWAY": "CBJ",
+	"DATE": 1427932800000
+	},
+	"90":{
+	"HOME": "BOS",
+	"AWAY": "DET",
+	"DATE": 1427932800000
+	},
+	"91":{
+	"HOME": "WSH",
+	"AWAY": "MTL",
+	"DATE": 1427932800000
+	},
+	"92":{
+	"HOME": "TBL",
+	"AWAY": "OTT",
+	"DATE": 1427932800000
+	},
+	"93":{
+	"HOME": "CAR",
+	"AWAY": "FLA",
+	"DATE": 1427932800000
+	},
+	"94":{
+	"HOME": "NYR",
+	"AWAY": "MIN",
+	"DATE": 1427932800000
+	},
+	"95":{
+	"HOME": "CGY",
+	"AWAY": "STL",
+	"DATE": 1427932800000
+	},
+	"96":{
+	"HOME": "VAN",
+	"AWAY": "CHI",
+	"DATE": 1427932800000
+	},
+	"97":{
+	"HOME": "MTL",
+	"AWAY": "NJD",
+	"DATE": 1428019200000
+	},
+	"98":{
+	"HOME": "STL",
+	"AWAY": "DAL",
+	"DATE": 1428019200000
+	},
+	"99":{
+	"HOME": "COL",
+	"AWAY": "ANA",
+	"DATE": 1428019200000
+	},
+	"100":{
+	"HOME": "PHI",
+	"AWAY": "CAR",
+	"DATE": 1428105600000
+	},
+	"101":{
+	"HOME": "PIT",
+	"AWAY": "CBJ",
+	"DATE": 1428105600000
+	},
+	"102":{
+	"HOME": "VAN",
+	"AWAY": "WPG",
+	"DATE": 1428105600000
+	},
+	"103":{
+	"HOME": "WSH",
+	"AWAY": "OTT",
+	"DATE": 1428105600000
+	},
+	"104":{
+	"HOME": "DET",
+	"AWAY": "MIN",
+	"DATE": 1428105600000
+	},
+	"105":{
+	"HOME": "TBL",
+	"AWAY": "FLA",
+	"DATE": 1428105600000
+	},
+	"106":{
+	"HOME": "NJD",
+	"AWAY": "NYR",
+	"DATE": 1428105600000
+	},
+	"107":{
+	"HOME": "DAL",
+	"AWAY": "NSH",
+	"DATE": 1428105600000
+	},
+	"108":{
+	"HOME": "COL",
+	"AWAY": "LAK",
+	"DATE": 1428105600000
+	},
+	"109":{
+	"HOME": "MTL",
+	"AWAY": "FLA",
+	"DATE": 1428192000000
+	},
+	"110":{
+	"HOME": "WSH",
+	"AWAY": "DET",
+	"DATE": 1428192000000
+	},
+	"111":{
+	"HOME": "PIT",
+	"AWAY": "PHI",
+	"DATE": 1428192000000
+	},
+	"112":{
+	"HOME": "STL",
+	"AWAY": "CHI",
+	"DATE": 1428192000000
+	},
+	"113":{
+	"HOME": "CBJ",
+	"AWAY": "NYR",
+	"DATE": 1428278400000
+	},
+	"114":{
+	"HOME": "WPG",
+	"AWAY": "MIN",
+	"DATE": 1428278400000
+	},
+	"115":{
+	"HOME": "LAK",
+	"AWAY": "VAN",
+	"DATE": 1428278400000
+	},
+	"116":{
+	"HOME": "DAL",
+	"AWAY": "SJS",
+	"DATE": 1428278400000
+	},
+	"117":{
+	"HOME": "NYR",
+	"AWAY": "NJD",
+	"DATE": 1428364800000
+	},
+	"118":{
+	"HOME": "NYI",
+	"AWAY": "PHI",
+	"DATE": 1428364800000
+	},
+	"119":{
+	"HOME": "PIT",
+	"AWAY": "OTT",
+	"DATE": 1428364800000
+	},
+	"120":{
+	"HOME": "CAR",
+	"AWAY": "DET",
+	"DATE": 1428364800000
+	},
+	"121":{
+	"HOME": "WPG",
+	"AWAY": "STL",
+	"DATE": 1428364800000
+	},
+	"122":{
+	"HOME": "MIN",
+	"AWAY": "CHI",
+	"DATE": 1428364800000
+	},
+	"123":{
+	"HOME": "NSH",
+	"AWAY": "COL",
+	"DATE": 1428364800000
+	},
+	"124":{
+	"HOME": "BOS",
+	"AWAY": "WSH",
+	"DATE": 1428451200000
+	},
+	"125":{
+	"HOME": "DAL",
+	"AWAY": "ANA",
+	"DATE": 1428451200000
+	},
+	"126":{
+	"HOME": "OTT",
+	"AWAY": "NYR",
+	"DATE": 1428537600000
+	},
+	"127":{
+	"HOME": "CAR",
+	"AWAY": "PHI",
+	"DATE": 1428537600000
+	},
+	"128":{
+	"HOME": "BOS",
+	"AWAY": "FLA",
+	"DATE": 1428537600000
+	},
+	"129":{
+	"HOME": "DET",
+	"AWAY": "MTL",
+	"DATE": 1428537600000
+	},
+	"130":{
+	"HOME": "NJD",
+	"AWAY": "TBL",
+	"DATE": 1428537600000
+	},
+	"131":{
+	"HOME": "CHI",
+	"AWAY": "STL",
+	"DATE": 1428537600000
+	},
+	"132":{
+	"HOME": "MIN",
+	"AWAY": "NSH",
+	"DATE": 1428537600000
+	},
+	"133":{
+	"HOME": "WPG",
+	"AWAY": "COL",
+	"DATE": 1428537600000
+	},
+	"134":{
+	"HOME": "LAK",
+	"AWAY": "CGY",
+	"DATE": 1428537600000
+	},
+	"135":{
+	"HOME": "NYI",
+	"AWAY": "PIT",
+	"DATE": 1428624000000
+	},
+	"136":{
+	"HOME": "OTT",
+	"AWAY": "PHI",
+	"DATE": 1428710400000
+	},
+	"137":{
+	"HOME": "NYR",
+	"AWAY": "WSH",
+	"DATE": 1428710400000
+	},
+	"138":{
+	"HOME": "CGY",
+	"AWAY": "WPG",
+	"DATE": 1428710400000
+	},
+	"139":{
+	"HOME": "SJS",
+	"AWAY": "LAK",
+	"DATE": 1428710400000
+	},
+	"140":{
+	"HOME": "DET",
+	"AWAY": "CAR",
+	"DATE": 1428710400000
+	},
+	"141":{
+	"HOME": "NJD",
+	"AWAY": "FLA",
+	"DATE": 1428710400000
+	},
+	"142":{
+	"HOME": "CBJ",
+	"AWAY": "NYI",
+	"DATE": 1428710400000
+	},
+	"143":{
+	"HOME": "BOS",
+	"AWAY": "TBL",
+	"DATE": 1428710400000
+	},
+	"144":{
+	"HOME": "MIN",
+	"AWAY": "STL",
+	"DATE": 1428710400000
+	},
+	"145":{
+	"HOME": "NSH",
+	"AWAY": "DAL",
+	"DATE": 1428710400000
+	},
+	"146":{
+	"HOME": "CHI",
+	"AWAY": "COL",
+	"DATE": 1428710400000
+	},
+	"147":{
+		"HOME": "ARI",
+		"AWAY": "SJS",
+		"DATE": 1428105600000
+	}
+}
