@@ -1129,6 +1129,6 @@ $(document).ready(function(){
 		}
 
 	}
-	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false});
+	$("#teamTable").DataTable({"order": [[5, "desc"], [6, "desc"]], paging: false, bInfo: false, autoWidth: false});
 	// $("#gamesTable").DataTable({"order": [[6, "asc"], [7, "asc"]], paging: false, bInfo: false, columnDefs: [{targets: [6, 7], visible: false}]});
 })
