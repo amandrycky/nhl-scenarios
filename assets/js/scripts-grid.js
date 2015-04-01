@@ -24,9 +24,9 @@ var teams =
 	{
 		"NAME": "Boston",
 		"SELECT": 1,
-		"CURRENT": 89,
-		"GAMES_LEFT": 6,
-		"ROW": 35,
+		"CURRENT": 91,
+		"GAMES_LEFT": 5,
+		"ROW": 36,
 		"CONFERENCE": "E",
 		"DIVISION": "A"		
 	},
@@ -45,7 +45,7 @@ var teams =
 		"NAME": "Carolina",
 		"SELECT": 1,
 		"CURRENT": 67,
-		"GAMES_LEFT": 7,
+		"GAMES_LEFT": 6,
 		"ROW": 24,
 		"CONFERENCE": "E",
 		"DIVISION": "M"			
@@ -74,9 +74,9 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 76,
-		"GAMES_LEFT": 7,
-		"ROW": 29,
+		"CURRENT": 78,
+		"GAMES_LEFT": 6,
+		"ROW": 30,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -104,8 +104,8 @@ var teams =
 	{
 		"NAME": "Detroit",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 7,
+		"CURRENT": 93,
+		"GAMES_LEFT": 6,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -125,7 +125,7 @@ var teams =
 		"NAME": "Florida",
 		"SELECT": 1,
 		"CURRENT": 85,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -164,8 +164,8 @@ var teams =
 	{
 		"NAME": "New Jersey",
 		"SELECT": 1,
-		"CURRENT": 74,
-		"GAMES_LEFT": 6,
+		"CURRENT": 75,
+		"GAMES_LEFT": 5,
 		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -174,8 +174,8 @@ var teams =
 	{
 		"NAME": "Nashville",
 		"SELECT": 1,
-		"CURRENT": 102,
-		"GAMES_LEFT": 5,
+		"CURRENT": 103,
+		"GAMES_LEFT": 4,
 		"ROW": 41,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -194,9 +194,9 @@ var teams =
 	{
 		"NAME": "NY Rangers",
 		"SELECT": 1,
-		"CURRENT": 101,
-		"GAMES_LEFT": 7,
-		"ROW": 43,
+		"CURRENT": 103,
+		"GAMES_LEFT": 6,
+		"ROW": 44,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -204,8 +204,8 @@ var teams =
 	{
 		"NAME": "Ottawa",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 7,
+		"CURRENT": 88,
+		"GAMES_LEFT": 6,
 		"ROW": 32,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -255,7 +255,7 @@ var teams =
 		"NAME": "Tampa Bay",
 		"SELECT": 1,
 		"CURRENT": 101,
-		"GAMES_LEFT": 5,
+		"GAMES_LEFT": 4,
 		"ROW": 45,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -264,9 +264,9 @@ var teams =
 	{
 		"NAME": "Toronto",
 		"SELECT": 1,
-		"CURRENT": 62,
-		"GAMES_LEFT": 7,
-		"ROW": 24,
+		"CURRENT": 64,
+		"GAMES_LEFT": 6,
+		"ROW": 25,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -274,8 +274,8 @@ var teams =
 	{
 		"NAME": "Vancouver",
 		"SELECT": 1,
-		"CURRENT": 93,
-		"GAMES_LEFT": 6,
+		"CURRENT": 95,
+		"GAMES_LEFT": 5,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -285,7 +285,7 @@ var teams =
 		"NAME": "Winnipeg",
 		"SELECT": 1,
 		"CURRENT": 90,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 32,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -294,9 +294,9 @@ var teams =
 	{
 		"NAME": "Washington",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 6,
-		"ROW": 37,
+		"CURRENT": 94,
+		"GAMES_LEFT": 5,
+		"ROW": 38,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	}
@@ -304,11 +304,6 @@ var teams =
 
 var gamesLeft = 
 {				
-	"30":{
-		"HOME": "TOR",
-		"AWAY": "TBL",
-		"DATE": 1427760000000
-	},		
 	"11":{
 		"HOME": "BUF",
 		"AWAY": "TOR",
@@ -408,36 +403,6 @@ var gamesLeft =
 		"HOME": "TOR",
 		"AWAY": "MTL",
 		"DATE": 1428710400000
-	},	
-	"81":{
-	"HOME": "FLA",
-	"AWAY": "BOS",
-	"DATE": 1427760000000
-	},
-	"82":{
-	"HOME": "NJD",
-	"AWAY": "CBJ",
-	"DATE": 1427760000000
-	},
-	"83":{
-	"HOME": "CAR",
-	"AWAY": "WSH",
-	"DATE": 1427760000000
-	},
-	"84":{
-	"HOME": "OTT",
-	"AWAY": "DET",
-	"DATE": 1427760000000
-	},
-	"85":{
-	"HOME": "NYR",
-	"AWAY": "WPG",
-	"DATE": 1427760000000
-	},
-	"86":{
-	"HOME": "VAN",
-	"AWAY": "NSH",
-	"DATE": 1427760000000
 	},
 	"87":{
 	"HOME": "PHI",
@@ -745,7 +710,6 @@ var gamesLeft =
 		"DATE": 1428105600000
 	}
 };
-
 var divisions = {"M": "Metropolitan", "A": "Atlantic", "P": "Pacific", "C": "Central"};
 var conferences = {"E": "Eastern", "W": "Western"};
 
@@ -815,7 +779,7 @@ $(document).ready(function(){
 	}
 
 	// Get date array of upcoming games
-	var firstDate = 1427760000000;
+	var firstDate = 1427846400000;
 	var lastDate = 1428710400000;
 	var dayMillisec = 1000 * 60 * 60 * 24; // days in milliseconds
 
