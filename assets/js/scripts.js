@@ -4,9 +4,9 @@ var teams =
 	{
 		"NAME": "Anaheim",
 		"SELECT": 1,
-		"CURRENT": 105,
-		"GAMES_LEFT": 4,
-		"ROW": 41,
+		"CURRENT": 107,
+		"GAMES_LEFT": 3,
+		"ROW": 42,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -24,9 +24,9 @@ var teams =
 	{
 		"NAME": "Boston",
 		"SELECT": 1,
-		"CURRENT": 91,
-		"GAMES_LEFT": 5,
-		"ROW": 36,
+		"CURRENT": 93,
+		"GAMES_LEFT": 4,
+		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "A"		
 	},
@@ -34,9 +34,9 @@ var teams =
 	{
 		"NAME": "Buffalo",
 		"SELECT": 1,
-		"CURRENT": 50,
-		"GAMES_LEFT": 6,
-		"ROW": 13,
+		"CURRENT": 52,
+		"GAMES_LEFT": 5,
+		"ROW": 14,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -45,7 +45,7 @@ var teams =
 		"NAME": "Carolina",
 		"SELECT": 1,
 		"CURRENT": 67,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 24,
 		"CONFERENCE": "E",
 		"DIVISION": "M"			
@@ -55,7 +55,7 @@ var teams =
 		"NAME": "Calgary",
 		"SELECT": 1,
 		"CURRENT": 91,
-		"GAMES_LEFT": 5,
+		"GAMES_LEFT": 4,
 		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -64,9 +64,9 @@ var teams =
 	{
 		"NAME": "Chicago",
 		"SELECT": 1,
-		"CURRENT": 98,
-		"GAMES_LEFT": 6,
-		"ROW": 37,
+		"CURRENT": 100,
+		"GAMES_LEFT": 5,
+		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -74,8 +74,8 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 78,
-		"GAMES_LEFT": 6,
+		"CURRENT": 80,
+		"GAMES_LEFT": 5,
 		"ROW": 30,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -85,7 +85,7 @@ var teams =
 		"NAME": "Colorado",
 		"SELECT": 1,
 		"CURRENT": 82,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 26,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -105,7 +105,7 @@ var teams =
 		"NAME": "Detroit",
 		"SELECT": 1,
 		"CURRENT": 93,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -115,7 +115,7 @@ var teams =
 		"NAME": "Edmonton",
 		"SELECT": 1,
 		"CURRENT": 59,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 4,
 		"ROW": 18,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -124,9 +124,9 @@ var teams =
 	{
 		"NAME": "Florida",
 		"SELECT": 1,
-		"CURRENT": 85,
-		"GAMES_LEFT": 5,
-		"ROW": 27,
+		"CURRENT": 87,
+		"GAMES_LEFT": 4,
+		"ROW": 28,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -134,9 +134,9 @@ var teams =
 	{
 		"NAME": "Los Angeles",
 		"SELECT": 1,
-		"CURRENT": 88,
-		"GAMES_LEFT": 6,
-		"ROW": 35,
+		"CURRENT": 90,
+		"GAMES_LEFT": 5,
+		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -145,7 +145,7 @@ var teams =
 		"NAME": "Minnesota",
 		"SELECT": 1,
 		"CURRENT": 95,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -154,8 +154,8 @@ var teams =
 	{
 		"NAME": "Montreal",
 		"SELECT": 1,
-		"CURRENT": 102,
-		"GAMES_LEFT": 5,
+		"CURRENT": 103,
+		"GAMES_LEFT": 4,
 		"ROW": 41,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -184,8 +184,8 @@ var teams =
 	{
 		"NAME": "NY Islanders",
 		"SELECT": 1,
-		"CURRENT": 95,
-		"GAMES_LEFT": 5,
+		"CURRENT": 96,
+		"GAMES_LEFT": 4,
 		"ROW": 38,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -194,9 +194,9 @@ var teams =
 	{
 		"NAME": "NY Rangers",
 		"SELECT": 1,
-		"CURRENT": 103,
-		"GAMES_LEFT": 6,
-		"ROW": 44,
+		"CURRENT": 105,
+		"GAMES_LEFT": 5,
+		"ROW": 45,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -204,9 +204,9 @@ var teams =
 	{
 		"NAME": "Ottawa",
 		"SELECT": 1,
-		"CURRENT": 88,
-		"GAMES_LEFT": 6,
-		"ROW": 32,
+		"CURRENT": 90,
+		"GAMES_LEFT": 5,
+		"ROW": 33,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -214,9 +214,9 @@ var teams =
 	{
 		"NAME": "Philadelphia",
 		"SELECT": 1,
-		"CURRENT": 77,
-		"GAMES_LEFT": 6,
-		"ROW": 27,
+		"CURRENT": 79,
+		"GAMES_LEFT": 5,
+		"ROW": 28,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -225,7 +225,7 @@ var teams =
 		"NAME": "Pittsburgh",
 		"SELECT": 1,
 		"CURRENT": 95,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 5,
 		"ROW": 38,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -234,9 +234,9 @@ var teams =
 	{
 		"NAME": "San Jose",
 		"SELECT": 1,
-		"CURRENT": 83,
-		"GAMES_LEFT": 6,
-		"ROW": 33,
+		"CURRENT": 85,
+		"GAMES_LEFT": 5,
+		"ROW": 34,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -244,9 +244,9 @@ var teams =
 	{
 		"NAME": "St. Louis",
 		"SELECT": 1,
-		"CURRENT": 99,
-		"GAMES_LEFT": 6,
-		"ROW": 37,
+		"CURRENT": 101,
+		"GAMES_LEFT": 5,
+		"ROW": 38,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -254,8 +254,8 @@ var teams =
 	{
 		"NAME": "Tampa Bay",
 		"SELECT": 1,
-		"CURRENT": 101,
-		"GAMES_LEFT": 4,
+		"CURRENT": 102,
+		"GAMES_LEFT": 3,
 		"ROW": 45,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -265,7 +265,7 @@ var teams =
 		"NAME": "Toronto",
 		"SELECT": 1,
 		"CURRENT": 64,
-		"GAMES_LEFT": 6,
+		"GAMES_LEFT": 4,
 		"ROW": 25,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -275,7 +275,7 @@ var teams =
 		"NAME": "Vancouver",
 		"SELECT": 1,
 		"CURRENT": 95,
-		"GAMES_LEFT": 5,
+		"GAMES_LEFT": 4,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -294,8 +294,8 @@ var teams =
 	{
 		"NAME": "Washington",
 		"SELECT": 1,
-		"CURRENT": 94,
-		"GAMES_LEFT": 5,
+		"CURRENT": 96,
+		"GAMES_LEFT": 4,
 		"ROW": 38,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -303,22 +303,7 @@ var teams =
 };
 
 var gamesLeft = 
-{				
-	"11":{
-		"HOME": "BUF",
-		"AWAY": "TOR",
-		"DATE": 1427846400000
-	},
-	"21":{
-		"HOME": "ANA",
-		"AWAY": "EDM",
-		"DATE": 1427846400000
-	},					
-	"22":{
-		"HOME": "LAK",
-		"AWAY": "EDM",
-		"DATE": 1427932800000
-	},		
+{									
 	"5":{
 		"HOME": "SJS",
 		"AWAY": "ARI",
@@ -403,56 +388,6 @@ var gamesLeft =
 		"HOME": "TOR",
 		"AWAY": "MTL",
 		"DATE": 1428710400000
-	},
-	"87":{
-	"HOME": "PHI",
-	"AWAY": "PIT",
-	"DATE": 1427846400000
-	},
-	"88":{
-	"HOME": "COL",
-	"AWAY": "SJS",
-	"DATE": 1427846400000
-	},
-	"89":{
-	"HOME": "NYI",
-	"AWAY": "CBJ",
-	"DATE": 1427932800000
-	},
-	"90":{
-	"HOME": "BOS",
-	"AWAY": "DET",
-	"DATE": 1427932800000
-	},
-	"91":{
-	"HOME": "WSH",
-	"AWAY": "MTL",
-	"DATE": 1427932800000
-	},
-	"92":{
-	"HOME": "TBL",
-	"AWAY": "OTT",
-	"DATE": 1427932800000
-	},
-	"93":{
-	"HOME": "CAR",
-	"AWAY": "FLA",
-	"DATE": 1427932800000
-	},
-	"94":{
-	"HOME": "NYR",
-	"AWAY": "MIN",
-	"DATE": 1427932800000
-	},
-	"95":{
-	"HOME": "CGY",
-	"AWAY": "STL",
-	"DATE": 1427932800000
-	},
-	"96":{
-	"HOME": "VAN",
-	"AWAY": "CHI",
-	"DATE": 1427932800000
 	},
 	"97":{
 	"HOME": "MTL",
