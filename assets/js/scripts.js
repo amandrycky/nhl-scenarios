@@ -553,11 +553,6 @@ var gamesLeft =
 	"HOME": "CHI",
 	"AWAY": "COL",
 	"DATE": 1428710400000
-	},
-	"147":{
-		"HOME": "ARI",
-		"AWAY": "SJS",
-		"DATE": 1428105600000
 	}
 };
 
