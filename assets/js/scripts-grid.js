@@ -34,9 +34,9 @@ var teams =
 	{
 		"NAME": "Buffalo",
 		"SELECT": 1,
-		"CURRENT": 52,
-		"GAMES_LEFT": 3,
-		"ROW": 14,
+		"CURRENT": 54,
+		"GAMES_LEFT": 2,
+		"ROW": 15,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -45,7 +45,7 @@ var teams =
 		"NAME": "Carolina",
 		"SELECT": 1,
 		"CURRENT": 69,
-		"GAMES_LEFT": 4,
+		"GAMES_LEFT": 3,
 		"ROW": 24,
 		"CONFERENCE": "E",
 		"DIVISION": "M"			
@@ -74,8 +74,8 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 82,
-		"GAMES_LEFT": 4,
+		"CURRENT": 83,
+		"GAMES_LEFT": 3,
 		"ROW": 31,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -94,9 +94,9 @@ var teams =
 	{
 		"NAME": "Dallas",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 3,
-		"ROW": 94,
+		"CURRENT": 88,
+		"GAMES_LEFT": 2,
+		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -134,8 +134,8 @@ var teams =
 	{
 		"NAME": "Los Angeles",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 4,
+		"CURRENT": 93,
+		"GAMES_LEFT": 3,
 		"ROW": 37,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -145,7 +145,7 @@ var teams =
 		"NAME": "Minnesota",
 		"SELECT": 1,
 		"CURRENT": 96,
-		"GAMES_LEFT": 4,
+		"GAMES_LEFT": 3,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -194,9 +194,9 @@ var teams =
 	{
 		"NAME": "NY Rangers",
 		"SELECT": 1,
-		"CURRENT": 107,
-		"GAMES_LEFT": 4,
-		"ROW": 46,
+		"CURRENT": 109,
+		"GAMES_LEFT": 3,
+		"ROW": 47,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -235,7 +235,7 @@ var teams =
 		"NAME": "San Jose",
 		"SELECT": 1,
 		"CURRENT": 87,
-		"GAMES_LEFT": 3,
+		"GAMES_LEFT": 2,
 		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -274,8 +274,8 @@ var teams =
 	{
 		"NAME": "Vancouver",
 		"SELECT": 1,
-		"CURRENT": 95,
-		"GAMES_LEFT": 3,
+		"CURRENT": 97,
+		"GAMES_LEFT": 2,
 		"ROW": 40,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -284,9 +284,9 @@ var teams =
 	{
 		"NAME": "Winnipeg",
 		"SELECT": 1,
-		"CURRENT": 92,
-		"GAMES_LEFT": 4,
-		"ROW": 33,
+		"CURRENT": 94,
+		"GAMES_LEFT": 3,
+		"ROW": 34,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -304,11 +304,6 @@ var teams =
 
 var gamesLeft = 
 {														
-	"14":{
-		"HOME": "BUF",
-		"AWAY": "CAR",
-		"DATE": 1428278400000
-	},
 	"6":{
 		"HOME": "ARI",
 		"AWAY": "CGY",
@@ -358,26 +353,6 @@ var gamesLeft =
 		"HOME": "TOR",
 		"AWAY": "MTL",
 		"DATE": 1428710400000
-	},
-	"113":{
-	"HOME": "CBJ",
-	"AWAY": "NYR",
-	"DATE": 1428278400000
-	},
-	"114":{
-	"HOME": "WPG",
-	"AWAY": "MIN",
-	"DATE": 1428278400000
-	},
-	"115":{
-	"HOME": "LAK",
-	"AWAY": "VAN",
-	"DATE": 1428278400000
-	},
-	"116":{
-	"HOME": "DAL",
-	"AWAY": "SJS",
-	"DATE": 1428278400000
 	},
 	"117":{
 	"HOME": "NYR",
@@ -595,7 +570,7 @@ $(document).ready(function(){
 	}
 
 	// Get date array of upcoming games
-	var firstDate = 1428192000000;
+	var firstDate = 1428364800000;
 	var lastDate = 1428710400000;
 	var dayMillisec = 1000 * 60 * 60 * 24; // days in milliseconds
 
