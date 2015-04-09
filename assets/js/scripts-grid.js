@@ -5,7 +5,7 @@ var teams =
 		"NAME": "Anaheim",
 		"SELECT": 1,
 		"CURRENT": 107,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 42,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -25,7 +25,7 @@ var teams =
 		"NAME": "Boston",
 		"SELECT": 1,
 		"CURRENT": 95,
-		"GAMES_LEFT": 3,
+		"GAMES_LEFT": 2,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "A"		
@@ -74,9 +74,9 @@ var teams =
 	{
 		"NAME": "Columbus",
 		"SELECT": 1,
-		"CURRENT": 83,
-		"GAMES_LEFT": 3,
-		"ROW": 31,
+		"CURRENT": 85,
+		"GAMES_LEFT": 2,
+		"ROW": 32,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	},
@@ -94,9 +94,9 @@ var teams =
 	{
 		"NAME": "Dallas",
 		"SELECT": 1,
-		"CURRENT": 88,
-		"GAMES_LEFT": 2,
-		"ROW": 35,
+		"CURRENT": 90,
+		"GAMES_LEFT": 1,
+		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -265,7 +265,7 @@ var teams =
 		"NAME": "Toronto",
 		"SELECT": 1,
 		"CURRENT": 67,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 25,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -294,9 +294,9 @@ var teams =
 	{
 		"NAME": "Washington",
 		"SELECT": 1,
-		"CURRENT": 99,
-		"GAMES_LEFT": 2,
-		"ROW": 39,
+		"CURRENT": 101,
+		"GAMES_LEFT": 1,
+		"ROW": 40,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
 	}
@@ -304,11 +304,6 @@ var teams =
 
 var gamesLeft = 
 {														
-	"28":{
-		"HOME": "CBJ",
-		"AWAY": "TOR",
-		"DATE": 1428451200000
-	},	
 	"7":{
 		"HOME": "VAN",
 		"AWAY": "ARI",
@@ -343,16 +338,6 @@ var gamesLeft =
 		"HOME": "TOR",
 		"AWAY": "MTL",
 		"DATE": 1428710400000
-	},
-	"124":{
-	"HOME": "BOS",
-	"AWAY": "WSH",
-	"DATE": 1428451200000
-	},
-	"125":{
-	"HOME": "DAL",
-	"AWAY": "ANA",
-	"DATE": 1428451200000
 	},
 	"126":{
 	"HOME": "OTT",
@@ -525,7 +510,7 @@ $(document).ready(function(){
 	}
 
 	// Get date array of upcoming games
-	var firstDate = 1428451200000;
+	var firstDate = 1428537600000;
 	var lastDate = 1428710400000;
 	var dayMillisec = 1000 * 60 * 60 * 24; // days in milliseconds
 
