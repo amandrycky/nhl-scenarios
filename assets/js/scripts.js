@@ -15,7 +15,7 @@ var teams =
 		"NAME": "Arizona",
 		"SELECT": 1,
 		"CURRENT": 56,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 19,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -25,7 +25,7 @@ var teams =
 		"NAME": "Boston",
 		"SELECT": 1,
 		"CURRENT": 95,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 37,
 		"CONFERENCE": "E",
 		"DIVISION": "A"		
@@ -44,9 +44,9 @@ var teams =
 	{
 		"NAME": "Carolina",
 		"SELECT": 1,
-		"CURRENT": 69,
-		"GAMES_LEFT": 2,
-		"ROW": 24,
+		"CURRENT": 71,
+		"GAMES_LEFT": 1,
+		"ROW": 25,
 		"CONFERENCE": "E",
 		"DIVISION": "M"			
 	},
@@ -54,9 +54,9 @@ var teams =
 	{
 		"NAME": "Calgary",
 		"SELECT": 1,
-		"CURRENT": 95,
-		"GAMES_LEFT": 2,
-		"ROW": 40,
+		"CURRENT": 97,
+		"GAMES_LEFT": 1,
+		"ROW": 41,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -65,7 +65,7 @@ var teams =
 		"NAME": "Chicago",
 		"SELECT": 1,
 		"CURRENT": 102,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 39,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -84,8 +84,8 @@ var teams =
 	{
 		"NAME": "Colorado",
 		"SELECT": 1,
-		"CURRENT": 86,
-		"GAMES_LEFT": 2,
+		"CURRENT": 88,
+		"GAMES_LEFT": 1,
 		"ROW": 28,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -104,8 +104,8 @@ var teams =
 	{
 		"NAME": "Detroit",
 		"SELECT": 1,
-		"CURRENT": 97,
-		"GAMES_LEFT": 2,
+		"CURRENT": 98,
+		"GAMES_LEFT": 1,
 		"ROW": 38,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
@@ -115,7 +115,7 @@ var teams =
 		"NAME": "Edmonton",
 		"SELECT": 1,
 		"CURRENT": 61,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 19,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
@@ -124,9 +124,9 @@ var teams =
 	{
 		"NAME": "Florida",
 		"SELECT": 1,
-		"CURRENT": 87,
-		"GAMES_LEFT": 2,
-		"ROW": 28,
+		"CURRENT": 89,
+		"GAMES_LEFT": 1,
+		"ROW": 29,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -144,9 +144,9 @@ var teams =
 	{
 		"NAME": "Minnesota",
 		"SELECT": 1,
-		"CURRENT": 98,
-		"GAMES_LEFT": 2,
-		"ROW": 41,
+		"CURRENT": 100,
+		"GAMES_LEFT": 1,
+		"ROW": 42,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -154,9 +154,9 @@ var teams =
 	{
 		"NAME": "Montreal",
 		"SELECT": 1,
-		"CURRENT": 106,
-		"GAMES_LEFT": 2,
-		"ROW": 42,
+		"CURRENT": 108,
+		"GAMES_LEFT": 1,
+		"ROW": 43,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -164,8 +164,8 @@ var teams =
 	{
 		"NAME": "New Jersey",
 		"SELECT": 1,
-		"CURRENT": 77,
-		"GAMES_LEFT": 2,
+		"CURRENT": 78,
+		"GAMES_LEFT": 1,
 		"ROW": 27,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -175,7 +175,7 @@ var teams =
 		"NAME": "Nashville",
 		"SELECT": 1,
 		"CURRENT": 104,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 41,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -195,7 +195,7 @@ var teams =
 		"NAME": "NY Rangers",
 		"SELECT": 1,
 		"CURRENT": 111,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 48,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -204,9 +204,9 @@ var teams =
 	{
 		"NAME": "Ottawa",
 		"SELECT": 1,
-		"CURRENT": 95,
-		"GAMES_LEFT": 2,
-		"ROW": 35,
+		"CURRENT": 97,
+		"GAMES_LEFT": 1,
+		"ROW": 36,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -215,7 +215,7 @@ var teams =
 		"NAME": "Philadelphia",
 		"SELECT": 1,
 		"CURRENT": 84,
-		"GAMES_LEFT": 2,
+		"GAMES_LEFT": 1,
 		"ROW": 30,
 		"CONFERENCE": "E",
 		"DIVISION": "M"	
@@ -234,9 +234,9 @@ var teams =
 	{
 		"NAME": "San Jose",
 		"SELECT": 1,
-		"CURRENT": 87,
-		"GAMES_LEFT": 2,
-		"ROW": 35,
+		"CURRENT": 89,
+		"GAMES_LEFT": 1,
+		"ROW": 36,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -244,9 +244,9 @@ var teams =
 	{
 		"NAME": "St. Louis",
 		"SELECT": 1,
-		"CURRENT": 105,
-		"GAMES_LEFT": 2,
-		"ROW": 40,
+		"CURRENT": 107,
+		"GAMES_LEFT": 1,
+		"ROW": 41,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
 	},
@@ -254,9 +254,9 @@ var teams =
 	{
 		"NAME": "Tampa Bay",
 		"SELECT": 1,
-		"CURRENT": 104,
-		"GAMES_LEFT": 2,
-		"ROW": 46,
+		"CURRENT": 106,
+		"GAMES_LEFT": 1,
+		"ROW": 47,
 		"CONFERENCE": "E",
 		"DIVISION": "A"	
 	},
@@ -274,9 +274,9 @@ var teams =
 	{
 		"NAME": "Vancouver",
 		"SELECT": 1,
-		"CURRENT": 97,
-		"GAMES_LEFT": 2,
-		"ROW": 40,
+		"CURRENT": 99,
+		"GAMES_LEFT": 1,
+		"ROW": 41,
 		"CONFERENCE": "W",
 		"DIVISION": "P"
 	},
@@ -284,8 +284,8 @@ var teams =
 	{
 		"NAME": "Winnipeg",
 		"SELECT": 1,
-		"CURRENT": 96,
-		"GAMES_LEFT": 2,
+		"CURRENT": 97,
+		"GAMES_LEFT": 1,
 		"ROW": 35,
 		"CONFERENCE": "W",
 		"DIVISION": "C"
@@ -303,17 +303,7 @@ var teams =
 };
 
 var gamesLeft = 
-{														
-	"7":{
-		"HOME": "VAN",
-		"AWAY": "ARI",
-		"DATE": 1428537600000
-	},
-	"25":{
-		"HOME": "EDM",
-		"AWAY": "SJS",
-		"DATE": 1428537600000
-	},			
+{															
 	"15":{
 		"HOME": "CBJ",
 		"AWAY": "BUF",
@@ -338,51 +328,6 @@ var gamesLeft =
 		"HOME": "TOR",
 		"AWAY": "MTL",
 		"DATE": 1428710400000
-	},
-	"126":{
-	"HOME": "OTT",
-	"AWAY": "NYR",
-	"DATE": 1428537600000
-	},
-	"127":{
-	"HOME": "CAR",
-	"AWAY": "PHI",
-	"DATE": 1428537600000
-	},
-	"128":{
-	"HOME": "BOS",
-	"AWAY": "FLA",
-	"DATE": 1428537600000
-	},
-	"129":{
-	"HOME": "DET",
-	"AWAY": "MTL",
-	"DATE": 1428537600000
-	},
-	"130":{
-	"HOME": "NJD",
-	"AWAY": "TBL",
-	"DATE": 1428537600000
-	},
-	"131":{
-	"HOME": "CHI",
-	"AWAY": "STL",
-	"DATE": 1428537600000
-	},
-	"132":{
-	"HOME": "MIN",
-	"AWAY": "NSH",
-	"DATE": 1428537600000
-	},
-	"133":{
-	"HOME": "WPG",
-	"AWAY": "COL",
-	"DATE": 1428537600000
-	},
-	"134":{
-	"HOME": "LAK",
-	"AWAY": "CGY",
-	"DATE": 1428537600000
 	},
 	"135":{
 	"HOME": "NYI",
@@ -450,12 +395,12 @@ var divisions = {"M": "Metropolitan", "A": "Atlantic", "P": "Pacific", "C": "Cen
 var conferences = {"E": "Eastern", "W": "Western"};
 
 
+
 var preDefinedTeams = 
 {
 	"tankTeams": ["ARI", "BUF"],
-	"easternPlayoff": ["BOS", "DET","PIT", "NYI", "OTT"],
-	"westernPlayoff": ["LAK", "CGY", "WPG"],
-	"westernSeeding": ["CHI", "STL", "NSH"]
+	"easternPlayoff": ["BOS", "PIT", "OTT"],
+	"westernSeeding": ["CHI", "MIN"]
 };
 
 $(document).ready(function(){
